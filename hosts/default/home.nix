@@ -23,6 +23,7 @@
   cava.enable = true;
   gtktheme.enable = true;
   hyprland.enable = true;
+  hyprlock.enable = true;
   hyprpaper.enable = true;
   mpv.enable = true;
   qttheme.enable = true;

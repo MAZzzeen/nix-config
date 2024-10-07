@@ -48,15 +48,6 @@
             halign = "center";
             valign = "center";
           }
-          {
-            text = ''cmd[update:1000] echo "$($HOME/.config/whoami.sh)"'';
-            color = "rgba(216,222,233,1)";
-            font_size = 14;
-            font_family = "JetBrains Mono";
-            position = "0, -10";
-            halign = "center";
-            valign = "top";
-          }
         ];
         input-field = [
           {
