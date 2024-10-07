@@ -31,7 +31,7 @@
           event = ["BufEnter"];
         }
       ];
-      extraConfigLua = ''                      
+      extraConfigLua = ''                  
              vim.api.nvim_create_autocmd("VimEnter", {
                callback = function()
                  vim.schedule(
@@ -82,11 +82,6 @@
             nil-ls = {
               enable = true;
               autostart = true;
-              settings = {
-                flake = {
-                  autoArchive = true;
-                };
-              };
             };
             pylsp.enable = true;
             lua-ls.enable = true;
