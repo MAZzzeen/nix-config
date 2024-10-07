@@ -31,37 +31,37 @@
           event = ["BufEnter"];
         }
       ];
-      extraConfigLua = ''                   
-               vim.api.nvim_create_autocmd("VimEnter", {
-                 callback = function()
-                   vim.schedule(
-              function()
-               	  vim.cmd("source $MYVIMRC")
-               	  vim.cmd("redraw!")
-               	  end)
-              end,
-               })
-        vim.api.nvim_create_autocmd("FileType", {
-          pattern = "dashboard",
-          callback = function()
-          vim.schedule(
-            function()
-              vim.opt_local.number = false
-              vim.opt_local.relativenumber = false
-              vim.opt_local.fillchars = "eob: "
-              vim.opt_local.cursorline = false
-            end)
-          end,
-        })
-        vim.api.nvim_create_autocmd("BufLeave", {
-          pattern = "dashboard",
-          callback = function()
-            vim.opt.number = true
-            vim.opt.relativenumber = true
-            vim.opt.fillchars = "eob:~"
-            vim.opt.cursorline = true
-          end,
-        })'';
+      extraConfigLua = ''                      
+             vim.api.nvim_create_autocmd("VimEnter", {
+               callback = function()
+                 vim.schedule(
+                   function()
+                    	vim.cmd("source $MYVIMRC")
+                     vim.cmd("redraw!")
+        end)
+                   end,
+             })
+             vim.api.nvim_create_autocmd("FileType", {
+               pattern = "dashboard",
+               callback = function()
+               vim.schedule(
+                 function()
+                   vim.opt_local.number = false
+                   vim.opt_local.relativenumber = false
+                   vim.opt_local.fillchars = "eob: "
+                   vim.opt_local.cursorline = false
+                 end)
+               end,
+             })
+             vim.api.nvim_create_autocmd("BufLeave", {
+               pattern = "dashboard",
+               callback = function()
+                 vim.opt.number = true
+                 vim.opt.relativenumber = true
+                 vim.opt.fillchars = "eob:~"
+                 vim.opt.cursorline = true
+               end,
+             })'';
       colorschemes.nord.enable = true;
       plugins = {
         cmp-treesitter = {
@@ -106,15 +106,15 @@
           settings = {
             mapping = {
               __raw = ''
-                          cmp.mapping.preset.insert({
-                            ["<CR>"] = cmp.mapping.confirm({ select = true }),
-                            ["<Tab>"] = cmp.mapping(function(fallback)
-                              if cmp.visible() then
-                                cmp.select_next_item()
-                else
-                                fallback()
-                              end
-                            end, { "i", "s"})})
+                            cmp.mapping.preset.insert({
+                ["<CR>"] = cmp.mapping.confirm({ select = true }),
+                              ["<Tab>"] = cmp.mapping(function(fallback)
+                                if cmp.visible() then
+                                  cmp.select_next_item()
+                  else
+                                  fallback()
+                                end
+                              end, { "i", "s"})})
               '';
             };
           };
