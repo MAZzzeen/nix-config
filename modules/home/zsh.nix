@@ -27,7 +27,7 @@
         share = false;
       };
       initExtraBeforeCompInit = "fastfetch";
-      envExtra = "WORDCHARS='*?_-[]~=&;!#$%^(){}<>'";
+      envExtra = "WORDCHARS='*?[]~=&;!#$%^(){}<>'";
       initExtra = ''
         bindkey "^[[1;5C" forward-word
         bindkey "^[[1;5D" backward-word

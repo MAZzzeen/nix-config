@@ -1,8 +1,23 @@
 #!/usr/bin/env bash
 set -e
 
+# Change to the NixOS configuration directory
+
+if [[ ! -d ~/.config/nixos/ ]]; then
+    echo "NixOS configuration directory not found."
+    exit 1
+else
+    pushd ~/.config/nixos/
+fi
+
+if ! command -v alejandra &> /dev/null; then
+    echo "Alejandra is not installed."
+    exit 1
+fi
+
+
 # Define the file to store the last used option
-LAST_OPTION_FILE="$HOME/.config/nixos/last_nixos_option.txt"
+LAST_OPTION_FILE="last-nixos-option.txt"
 
 # Read the last used option if it exists
 if [[ -f "$LAST_OPTION_FILE" ]]; then
@@ -18,9 +33,6 @@ OPTION=${OPTION:-$LAST_OPTION}  # Use last option if no input
 # Save the last used option
 echo "$OPTION" > "$LAST_OPTION_FILE"
 
-# Change to the NixOS configuration directory
-pushd ~/.config/nixos/
-
 # Run Alejandra
 alejandra .
 
@@ -31,7 +43,7 @@ echo "NixOS Rebuilding with option: $OPTION..."
 git add .
 
 # Execute the rebuild command
-sudo nixos-rebuild switch --flake ".#$OPTION" &> nixos-switch.log || (
+sudo nixos-rebuild switch --flake ".#$OPTION" &> >(tee -a nixos-switch.log) || (
     cat nixos-switch.log | grep --color error && false
 )
 
