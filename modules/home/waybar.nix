@@ -42,7 +42,7 @@
           "custom/Archmenubutton" = {
             format = "󱄅";
             tooltip = false;
-            on-click = "wofi --show drun";
+            on-click = "rofi -show drun -show-icons";
           };
           "custom/powerbutton" = {
             format = "󰤆";
