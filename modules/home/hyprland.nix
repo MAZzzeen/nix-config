@@ -16,7 +16,7 @@
         bind = SUPER, M, exit,
         bind = SUPER, E, exec, thunar
         bind = SUPER, V, togglefloating,
-        bind = SUPER, Space, exec, wofi --show drun
+        bind = SUPER, Space, exec, rofi -show drun -show-icons
         bind = SUPER, P, pseudo,
         bind = SUPER, J, togglesplit,
         bind = SUPER, Escape, exec, wlogout

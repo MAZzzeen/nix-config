@@ -94,7 +94,7 @@
     git
     wget
     eza
-    wofi
+    rofi-wayland
     tree
     mako
     killall
