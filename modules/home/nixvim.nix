@@ -31,7 +31,7 @@
           event = ["BufEnter"];
         }
       ];
-      extraConfigLua = ''        
+      extraConfigLua = ''              
              vim.api.nvim_create_autocmd("VimEnter", {
                callback = function()
                  vim.schedule(
