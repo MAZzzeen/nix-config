@@ -26,8 +26,8 @@
           opacity = 1;
         };
         window.padding = {
-          x = 5;
-          y = 8;
+          x = 18;
+          y = 18;
         };
         window.dimensions = {
           columns = 100;

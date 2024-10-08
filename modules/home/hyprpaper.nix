@@ -3,7 +3,12 @@
   lib,
   config,
   ...
-}: {
+}: let
+  wallpaperDir = builtins.path {
+    name = "wallpapers";
+    path = "${./../../Backgrounds}"; # Adjust this based on your directory structure
+  };
+in {
   options = {
     hyprpaper.enable = lib.mkEnableOption "enables hyprpaper";
   };
@@ -11,8 +16,8 @@
     services.hyprpaper = {
       enable = true;
       settings = {
-        preload = ["$HOME/Pictures/Backgrounds/wallhaven-md7591.jpg"];
-        wallpaper = ["DP-1,$HOME/Pictures/Backgrounds/wallhaven-md7591.jpg"];
+        preload = ["${wallpaperDir}/wallhaven-md7591.jpg"];
+        wallpaper = ["DP-1,${wallpaperDir}/wallhaven-md7591.jpg"];
       };
     };
   };
