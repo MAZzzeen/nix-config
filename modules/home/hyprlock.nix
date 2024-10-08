@@ -3,7 +3,12 @@
   lib,
   config,
   ...
-}: {
+}: let
+  wallpaperDir = builtins.path {
+    name = "wallpapers";
+    path = "${./../../Backgrounds}"; # Adjust this based on your directory structure
+  };
+in {
   options = {
     hyprlock.enable = lib.mkEnableOption "enables hyprlock";
   };
@@ -21,7 +26,7 @@
         };
         background = [
           {
-            path = "$HOME/Pictures/Backgrounds/wallhaven-qz6dz5.jpg";
+            path = "${wallpaperDir}/Lockscreen.jpg";
             blur_passes = 2;
             contrast = 1;
             brightness = 0.5;

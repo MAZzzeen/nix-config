@@ -16,8 +16,8 @@ in {
     services.hyprpaper = {
       enable = true;
       settings = {
-        preload = ["${wallpaperDir}/wallhaven-md7591.jpg"];
-        wallpaper = ["DP-1,${wallpaperDir}/wallhaven-md7591.jpg"];
+        preload = ["${wallpaperDir}/Wallpaper.jpg"];
+        wallpaper = ["DP-1,${wallpaperDir}/Wallpaper.jpg"];
       };
     };
   };
