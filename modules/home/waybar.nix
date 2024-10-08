@@ -70,7 +70,7 @@
           "custom/clipboard" = {
             format = "󰅇   Clipboard";
             tooltip = false;
-            on-click = "cliphist list | wofi -S dmenu | cliphist decode | wl-copy";
+            on-click = "cliphist list | rofi -dmenu | cliphist decode | wl-copy";
           };
           "tray" = {
             icon-size = 21;
