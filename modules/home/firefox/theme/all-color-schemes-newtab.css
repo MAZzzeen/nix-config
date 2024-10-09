@@ -26,6 +26,8 @@ Use the template below to enter your theme into the list:
 
 @media (-moz-bool-pref: "user.theme.dark.midnight"){body{background-image: url("pic/midnight.png") !important;}}
 
+@media (-moz-bool-pref: "user.theme.dark.nord"){body{background-image: url("pic/nord.png") !important;}}
+
 }
 
 /*--------------------------------- LIGHT COLOR SCHEME SECTION ---------------------------------*/
