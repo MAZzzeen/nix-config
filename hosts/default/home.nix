@@ -27,6 +27,7 @@
   hyprpaper.enable = true;
   mpv.enable = true;
   qttheme.enable = true;
+  firefox.enable = true;
   waybar.enable = true;
   zsh.enable = true;
   mimeapps.enable = true;
