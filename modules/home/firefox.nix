@@ -14,6 +14,7 @@
       profiles = {
         default = {
           search = {
+            force = true;
             engines = {
               "Brave Search" = {
                 urls = [{template = "https://search.brave.com/search?q={searchTerms}";}];

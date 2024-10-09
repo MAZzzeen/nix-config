@@ -37,7 +37,7 @@
             rewrite = {
               "(.*) - Chromium(.*)" = "Chromium";
               "(.*) - Thunar(.*)" = "Thunar";
-              "(.*) -- Mozilla Firefox(.*)" = "Mozilla Firefox";
+              "(.*) — Mozilla Firefox(.*)" = "Mozilla Firefox";
             };
           };
           "custom/Archmenubutton" = {
