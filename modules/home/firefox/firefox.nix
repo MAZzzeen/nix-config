@@ -72,7 +72,7 @@ in {
               "user.theme.dark.gruvbox" = false;
               "user.theme.light.gruvbox" = false;
               "user.theme.dark.midnight" = false;
-              "user.theme.dark.nord" = false;
+              "user.theme.dark.nord" = true;
               "ultima.fix.gnome.titlebar" = false;
               "ultima.fix.gnome.titlebar.small" = false;
               "ultima.keep.titlebar" = true;
