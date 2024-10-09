@@ -12,6 +12,7 @@
   config = lib.mkIf config.qttheme.enable {
     programs.firefox = {
       enable = true;
+      package = pkgs.floorp;
     };
   };
 }
