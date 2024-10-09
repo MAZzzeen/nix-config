@@ -36,33 +36,33 @@ in {
             ];
             isDefault = true;
             userChrome = "
-	  @import url(${theme}/all-global-positioning.css);
-	  @import url(${theme}/all-color-schemes.css);
+	      @import url(${theme}/all-global-positioning.css);
+	      @import url(${theme}/all-color-schemes.css);
 
-@import url(${theme}/function-sidebar-autohide.css);
-@import url(${theme}/function-sidebery-autohide.css);
-@import url(${theme}/function-privatemode.css); 
-@import url(${theme}/function-urlbar.css);
-@import url(${theme}/function-extensions-menu.css);
+	      @import url(${theme}/function-sidebar-autohide.css);
+	      @import url(${theme}/function-sidebery-autohide.css);
+	      @import url(${theme}/function-privatemode.css); 
+	      @import url(${theme}/function-urlbar.css);
+	      @import url(${theme}/function-extensions-menu.css);
 
-@import url(${theme}/theme-xstyle.css);
-@import url(${theme}/theme-context-menu.css);
-@import url(${theme}/theme-statuspanel.css);
-@import url(${theme}/theme-findbar.css);
-@import url(${theme}/theme-PIP.css);
-@import url(${theme}/theme-tab-audio-indicator.css);
-	  ";
+	      @import url(${theme}/theme-xstyle.css);
+	      @import url(${theme}/theme-context-menu.css);
+	      @import url(${theme}/theme-statuspanel.css);
+	      @import url(${theme}/theme-findbar.css);
+	      @import url(${theme}/theme-PIP.css);
+	      @import url(${theme}/theme-tab-audio-indicator.css);
+	    ";
             userContent = "
-	  @import url(${theme}/website-styles.css);
+	      @import url(${theme}/website-styles.css);
 
-@import url(${theme}/website-newtab.css);
+	      @import url(${theme}/website-newtab.css);
+  
+	      @import url(${theme}/website-reddit.css);
 
-@import url(${theme}/website-reddit.css);
+	      @import url(${theme}/website-yt.css);
 
-@import url(${theme}/website-yt.css);
-
-@import url(${theme}/website-private.css);
-	  ";
+	      @import url(${theme}/website-private.css);
+	    ";
             settings = {
               "extensions.autoDisableScopes" = 0;
               "user.theme.dark.a" = true;
@@ -105,7 +105,7 @@ in {
               "sidebar.verticalTabs" = true;
               "browser.tabs.hoverPreview.enabled" = true;
               "browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled" = false;
-              "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = true;
+              "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
               "browser.startup.page" = 0;
               "browser.startup.homepage" = "about:blank";
               "browser.newtabpage.enabled" = false;
