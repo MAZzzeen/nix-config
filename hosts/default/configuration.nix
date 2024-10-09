@@ -26,10 +26,16 @@
     };
   };
 
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 1w";
+  nix = {
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 1w";
+    };
+    optimise = {
+      automatic = true;
+      dates = ["03:45"];
+    };
   };
 
   security.polkit.enable = true;
