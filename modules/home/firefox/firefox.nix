@@ -108,7 +108,6 @@ in {
               "browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled" = false;
               "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
               "browser.startup.page" = 0;
-              "browser.startup.homepage" = "about:blank";
               "browser.newtabpage.enabled" = false;
               "browser.newtabpage.activity-stream.showSponsored" = false;
               "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
