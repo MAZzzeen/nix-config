@@ -5,7 +5,7 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./mako.nix
-    ./firefox.nix
+    ./firefox/firefox.nix
     ./nixvim.nix
     ./starship.nix
     ./wlogout.nix
