@@ -4,5 +4,5 @@
 
 my nix config
 
-firefox style by FFULTIMA:
+firefox style by soulhotel:
 https://github.com/soulhotel/FF-ULTIMA
