@@ -107,7 +107,7 @@ in {
               "browser.tabs.hoverPreview.enabled" = true;
               "browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled" = false;
               "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
-              "browser.startup.page" = "about:home";
+              "browser.startup.page" = 1;
               "browser.newtabpage.enabled" = true;
               "browser.startup.homepage" = "about:home";
               "browser.newtabpage.activity-stream.showSponsored" = false;
