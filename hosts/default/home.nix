@@ -40,7 +40,6 @@
 
   home.packages = with pkgs; [
     fastfetch
-    ungoogled-chromium
     lutris
     alacritty
     wineWowPackages.staging
