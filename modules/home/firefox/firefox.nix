@@ -109,6 +109,7 @@ in {
               "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
               "browser.startup.page" = 0;
               "browser.newtabpage.enabled" = false;
+              "browser.newtab.url" = "about:home";
               "browser.newtabpage.activity-stream.showSponsored" = false;
               "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
               "browser.newtabpage.activity-stream.default.sites" = "";
