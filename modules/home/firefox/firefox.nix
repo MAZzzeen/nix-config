@@ -65,14 +65,13 @@ in {
 	  ";
             settings = {
               "extensions.autoDisableScopes" = 0;
-
-              "user.theme" = [
-                {
-                  "dark.a" = true;
-                  "light.a" = true;
-                }
-              ];
-
+              "user.theme.dark.a" = true;
+              "user.theme.light.a" = true;
+              "user.theme.dark.catppuccin" = false;
+              "user.theme.dark.catppuccin-mocha" = false;
+              "user.theme.dark.gruvbox" = false;
+              "user.theme.light.gruvbox" = false;
+              "user.theme.dark.midnight" = false;
               "ultima.fix.gnome.titlebar" = false;
               "ultima.fix.gnome.titlebar.small" = false;
               "ultima.keep.titlebar" = true;
