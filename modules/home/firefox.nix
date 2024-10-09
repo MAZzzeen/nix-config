@@ -14,10 +14,13 @@
       enable = true;
       profiles = {
         default = {
-          search.engines = {
-            "Brave Search" = {
-              urls = [{template = "https://search.brave.com/search?q={searchTerms}";}];
+          search = {
+            engines = {
+              "Brave Search" = {
+                urls = [{template = "https://search.brave.com/search?q={searchTerms}";}];
+              };
             };
+            default = "Brave Search";
           };
           extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
             ublock-origin
@@ -27,6 +30,7 @@
           ];
           isDefault = true;
           settings = {
+            "extensions.autoDisableScopes" = 0;
             "_user.js.parrot" = [
               "START: Oh yes, the Norwegian Blue... what's wrong with it?"
               "0100 syntax error: the parrot's dead!"
