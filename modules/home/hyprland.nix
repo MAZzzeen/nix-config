@@ -17,7 +17,7 @@
       importantPrefixes = ["$" "bezier" "name" "source"];
       plugins = [];
       settings = {
-        monitor = [",preferred,auto,auto" "DP-1,preferred,auto,1.3" "FALLBACK,1920x1080@60,auto,1"];
+        monitor = [",preferred,auto,auto" "DP-1,preferred,auto,1.333333" "FALLBACK,1920x1080@60,auto,1"];
         bindm = ["SUPER, mouse:272, movewindow" "SUPER, mouse:273, resizewindow"];
         bindl = [
           ", XF86AudioNext, exec, playerctl next"
