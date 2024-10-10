@@ -6,4 +6,11 @@
 my nix config
 
 firefox style by soulhotel:
+
 https://github.com/soulhotel/FF-ULTIMA
+
+
+# Be sure to run patch.sh in modules/home/firefox/ first before rebuilding nix!
+
+and be sure to point to the directory where you have your nix config in rebuild.sh if you plan on using it.
+
