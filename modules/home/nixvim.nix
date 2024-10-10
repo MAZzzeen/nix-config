@@ -79,12 +79,12 @@
         lsp = {
           enable = true;
           servers = {
-            nil-ls = {
+            nil_ls = {
               enable = true;
               autostart = true;
             };
             pylsp.enable = true;
-            lua-ls.enable = true;
+            lua_ls.enable = true;
           };
         };
         web-devicons = {
