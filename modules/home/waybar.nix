@@ -15,7 +15,7 @@
           layer = "top";
           position = "top";
           height = 40;
-          width = 1900;
+          width = 1800;
           margin-top = 12;
           margin-bottom = -8;
 
