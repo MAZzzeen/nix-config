@@ -14,8 +14,8 @@
       defaultOptions = [
         "--border=rounded"
         "--height=30%"
-        "--hidden"
       ];
+      defaultCommand = "find .";
     };
   };
 }
