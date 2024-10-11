@@ -25,6 +25,14 @@
           comment = "image viewer";
           mimeType = ["image/*"];
         };
+        neovim = {
+          name = "Neovim";
+          genericName = "Text Editor";
+          exec = "alacritty --command neovim %F";
+          terminal = false;
+          comment = "Text Editor";
+          mimeType = ["text/*"];
+        };
       };
       mimeApps = {
         enable = true;
@@ -32,9 +40,11 @@
           "application/vnd.microsoft.portable-executable" = "wine.desktop";
           "text/plain" = "Alacritty.desktop;neovim.desktop;neovide.desktop;nvim.desktop;";
           "application/zip" = "org.gnome.FileRoller.desktop;";
+          "text/*" = "neovim.desktop";
         };
         defaultApplications = {
           "application/vnd.microsoft.portable-executable" = "wine.desktop";
+          "text/*" = "neovim.desktop";
         };
       };
     };
