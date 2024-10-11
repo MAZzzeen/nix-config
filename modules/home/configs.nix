@@ -16,6 +16,8 @@
     ./mpv.nix
     ./qttheme.nix
     ./waybar.nix
+    ./zoxide.nix
+    ./fzf.nix
     ./rofi.nix
     ./zsh.nix
     ./mimeapps.nix

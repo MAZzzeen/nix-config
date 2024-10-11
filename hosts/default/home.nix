@@ -32,6 +32,8 @@
   zsh.enable = true;
   mimeapps.enable = true;
   rofi.enable = true;
+  fzf.enable = true;
+  zoxide.enable = true;
 
   programs.bash.enable = true;
 

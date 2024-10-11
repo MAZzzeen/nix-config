@@ -42,6 +42,7 @@
         yeet = "sudo pacman -Rns";
         vi = "nvim";
         cls = "clear && fastfetch";
+        cd = "z";
         rebuild-nix = "~/.config/nixos/rebuild.sh";
       };
     };
