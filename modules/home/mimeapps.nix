@@ -32,6 +32,8 @@
           "application/vnd.microsoft.portable-executable" = "wine.desktop";
           "text/plain" = "Alacritty.desktop;neovim.desktop;neovide.desktop;nvim.desktop;";
           "application/zip" = "org.gnome.FileRoller.desktop;";
+          "image/*" = "nsxiv.desktop";
+          "*.cbr" = "zathura.desktop";
         };
         defaultApplications = {
           "application/vnd.microsoft.portable-executable" = "wine.desktop";
