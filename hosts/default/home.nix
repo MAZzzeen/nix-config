@@ -17,7 +17,6 @@
   fastfetch.enable = true;
   hypridle.enable = true;
   mako.enable = true;
-  nixvim.enable = true;
   starship.enable = true;
   wlogout.enable = true;
   cava.enable = true;
