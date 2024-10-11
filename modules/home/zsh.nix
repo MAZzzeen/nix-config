@@ -28,7 +28,10 @@
         share = true;
       };
       initExtraBeforeCompInit = "fastfetch";
-      envExtra = "WORDCHARS='*?[]~=&;!#$%^(){}<>'";
+      envExtra = "
+      WORDCHARS='*?[]~=&;!#$%^(){}<>'
+      FZF_COMPLETION_TRIGGER='tab'
+      ";
       initExtra = ''
                bindkey "^[[1;5C" forward-word
                bindkey "^[[1;5D" backward-word

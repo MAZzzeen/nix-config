@@ -12,7 +12,8 @@
       enable = true;
       enableZshIntegration = true;
       defaultOptions = [
-        "--border"
+        "--border rounded"
+        "--height 40%"
       ];
     };
   };
