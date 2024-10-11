@@ -65,12 +65,12 @@
   xdg.mimeApps = {
     enable = true;
     associations.added = {
-      "application/exe" = "wine";
+      "application/vnd.microsoft.portable-executable" = "wine";
       "text/plain" = "Alacritty.desktop;neovim.desktop;neovide.desktop;nvim.desktop;";
       "application/zip" = "org.gnome.FileRoller.desktop;";
     };
     defaultApplications = {
-      "application/exe" = "wine";
+      "application/vnd.microsoft.portable-executable" = "wine";
     };
   };
 
