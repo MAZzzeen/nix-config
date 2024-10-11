@@ -32,6 +32,7 @@
   zsh.enable = true;
   mimeapps.enable = true;
   rofi.enable = true;
+  yazi.enable = true;
 
   programs.bash.enable = true;
 

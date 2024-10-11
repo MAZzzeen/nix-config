@@ -14,6 +14,7 @@
     ./hyprland.nix
     ./hyprpaper.nix
     ./mpv.nix
+    ./yazi.nix
     ./qttheme.nix
     ./waybar.nix
     ./rofi.nix
