@@ -32,6 +32,7 @@
   mimeapps.enable = true;
   rofi.enable = true;
   fzf.enable = true;
+  nixvim.enable = true;
   zoxide.enable = true;
   yazi.enable = true;
 
