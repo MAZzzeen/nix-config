@@ -35,7 +35,7 @@
                bindkey "^[[1;5C" forward-word
                bindkey "^[[1;5D" backward-word
                bindkey '^H' backward-kill-word
-        bindkey '^I' fzf_completion
+        bindkey '^I' fzf-completion
         zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
                eval "$(starship init zsh)"
       '';
