@@ -11,6 +11,15 @@
     programs.yazi = {
       enable = true;
       enableZshIntegration = true;
+      settings = {
+        manager = {
+          sort_dir_first = true;
+          show_hidden = true;
+        };
+        preview = {
+          wrap = "yes";
+        };
+      };
     };
   };
 }

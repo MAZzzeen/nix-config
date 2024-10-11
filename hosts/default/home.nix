@@ -52,6 +52,7 @@
     cava
     zathura
     qbittorrent
+    ueberzugpp
     eza
     lxde.lxsession
     btop
