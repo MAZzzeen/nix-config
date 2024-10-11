@@ -98,10 +98,10 @@
           enable = true;
           autoEnableSources = true;
           settings.sources = [
+            {name = "nil_ls";}
             {name = "nvim_lsp";}
             {name = "path";}
             {name = "buffer";}
-            {name = "nil_ls";}
           ];
           settings = {
             mapping = {
