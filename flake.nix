@@ -43,8 +43,8 @@
           pkgs,
           ...
         }: {nixpkgs.overlays = [overlay-stable];})
-        ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
+        ./hosts/default/configuration.nix
       ];
     };
   };
