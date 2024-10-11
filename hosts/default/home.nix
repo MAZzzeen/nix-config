@@ -55,6 +55,7 @@
     zathura
     qbittorrent
     eza
+    ueberzugpp
     vesktop
     moar
     lxde.lxsession

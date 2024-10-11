@@ -19,6 +19,9 @@
         preview = {
           wrap = "yes";
         };
+        plugins = {
+          full-border = true;
+        };
       };
     };
   };

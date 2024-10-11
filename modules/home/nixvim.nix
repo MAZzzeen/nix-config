@@ -64,9 +64,6 @@
              })'';
       colorschemes.nord.enable = true;
       plugins = {
-        cmp-treesitter = {
-          enable = true;
-        };
         nvim-tree = {
           enable = true;
           actions = {
@@ -79,7 +76,6 @@
         lsp = {
           enable = true;
           servers = {
-            statix.enable = true;
             nil_ls = {
               enable = true;
               autostart = true;
@@ -122,6 +118,10 @@
             };
           };
         };
+        cmp-treesitter.enable = true;
+        cmp-nvim-lsp.enable = true;
+        cmp-path.enable = true;
+        cmp-buffer.enable = true;
         indent-blankline = {
           enable = true;
           settings = {
