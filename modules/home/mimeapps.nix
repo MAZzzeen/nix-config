@@ -28,7 +28,7 @@
         neovim = {
           name = "Neovim";
           genericName = "Text Editor";
-          exec = "alacritty --command neovim %F";
+          exec = "alacritty --command nvim %F";
           terminal = false;
           comment = "Text Editor";
           mimeType = ["text/*"];
