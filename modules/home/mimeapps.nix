@@ -9,13 +9,24 @@
     xdg = {
       enable = true;
       desktopEntries = {
-        neovim = {
-          name = "Neovim";
-          genericName = "Text Editor";
-          exec = "alacritty --command nvim %F";
+        wine = {
+          name = "Wine";
+          genericName = "Windows Application";
+          exec = "wine %F";
           terminal = false;
-          comment = "Launch Neovim in Alacritty";
-          mimeType = ["text/*"];
+          comment = "Launch Windows application";
+          mimeType = ["application/vnd.microsoft.portable-executable"];
+        };
+      };
+      mimeApps = {
+        enable = true;
+        associations.added = {
+          "application/vnd.microsoft.portable-executable" = "wine.desktop";
+          "text/plain" = "Alacritty.desktop;neovim.desktop;neovide.desktop;nvim.desktop;";
+          "application/zip" = "org.gnome.FileRoller.desktop;";
+        };
+        defaultApplications = {
+          "application/vnd.microsoft.portable-executable" = "wine.desktop";
         };
       };
     };

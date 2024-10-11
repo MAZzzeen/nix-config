@@ -68,6 +68,7 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   programs = {
+    dconf.enable = true;
     zsh.enable = true;
     xfconf.enable = true;
     file-roller.enable = true;
