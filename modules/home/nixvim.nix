@@ -82,6 +82,13 @@
             nil_ls = {
               enable = true;
               autostart = true;
+              settings = {
+                nix = {
+                  flake = {
+                    autoArchive = true;
+                  };
+                };
+              };
             };
             pylsp.enable = true;
             lua_ls.enable = true;
