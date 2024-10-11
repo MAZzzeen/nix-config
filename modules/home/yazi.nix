@@ -18,12 +18,10 @@
           scrolloff = 5;
         };
         opener = {
-          edit = [
-            {
-              run = ''nvim "$@"'';
-              block = true;
-            }
-          ];
+          edit = {
+            run = ''nvim "$@"'';
+            block = true;
+          };
         };
         preview = {
           wrap = "yes";
