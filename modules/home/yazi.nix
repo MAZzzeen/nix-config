@@ -16,23 +16,38 @@
           sort_dir_first = true;
           scrolloff = 5;
         };
-        opener = ''
-                 edit = [
-                   { run = "nvim '$@'", block = true }
-          ]
-                 play = [
-                   { run = "mpv '$@'", orphan = true }
-                 ]
-                 read = [
-                   { run = "zathura '$@'", orphan = true }
-                 ]
-                 view = [
-                   { run = "nsxiv '$@'", orphan = true }
-                 ]
-                 open = [
-                   { run = "xdg-open '$@'", desc = "Open" }
-                 ]
-        '';
+        opener = {
+          edit = [
+            {
+              run = "nvim '$@'";
+              block = true;
+            }
+          ];
+          play = [
+            {
+              run = "mpv '$@'";
+              orphan = true;
+            }
+          ];
+          read = [
+            {
+              run = "zathura '$@'";
+              orphan = true;
+            }
+          ];
+          view = [
+            {
+              run = "nsxiv '$@'";
+              orphan = true;
+            }
+          ];
+          open = [
+            {
+              run = "xdg-open '$@'";
+              desc = "Open";
+            }
+          ];
+        };
         preview = {
           wrap = "yes";
         };
