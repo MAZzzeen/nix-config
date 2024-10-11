@@ -101,6 +101,7 @@
             {name = "nvim_lsp";}
             {name = "path";}
             {name = "buffer";}
+            {name = "nil_ls";}
           ];
           settings = {
             mapping = {
