@@ -24,6 +24,24 @@
               block = true;
             }
           ];
+          play = [
+            {
+              run = ''mpv "$@"'';
+              orphan = true;
+            }
+          ];
+          read = [
+            {
+              run = ''zathura "$@"'';
+              orphan = true;
+            }
+          ];
+          view = [
+            {
+              run = ''nsxiv "$@"'';
+              orphan = true;
+            }
+          ];
         };
         preview = {
           wrap = "yes";

@@ -62,6 +62,18 @@
     (prismlauncher.override {jdks = [temurin-jre-bin-21 temurin-jre-bin-8 temurin-jre-bin-17];})
   ];
 
+  xdg.mimeApps = {
+    enable = true;
+    associations.added = {
+      "application/exe" = "wine";
+      "text/plain" = "Alacritty.desktop;neovim.desktop;neovide.desktop;nvim.desktop;";
+      "application/zip" = "org.gnome.FileRoller.desktop;";
+    };
+    defaultApplications = {
+      "application/exe" = "wine";
+    };
+  };
+
   home.file = {
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
