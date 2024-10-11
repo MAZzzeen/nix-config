@@ -31,6 +31,7 @@
   waybar.enable = true;
   zsh.enable = true;
   mimeapps.enable = true;
+  rofi.enable = true;
 
   programs.bash.enable = true;
 
