@@ -54,6 +54,7 @@
     zathura
     qbittorrent
     eza
+    moar
     lxde.lxsession
     btop
     nsxiv
@@ -88,6 +89,7 @@
     XCURSOR_PATH = "/usr/share/icons:$HOME/.local/share/icons";
     GNUPGHOME = "$HOME/.local/share/gnupg";
     TERM = "alacritty";
+    PAGER = "moar";
   };
 
   programs.home-manager.enable = true;
