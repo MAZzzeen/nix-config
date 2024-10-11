@@ -14,7 +14,6 @@
       settings = {
         manager = {
           sort_dir_first = true;
-          show_hidden = true;
           scrolloff = 5;
         };
         opener = {
@@ -42,9 +41,53 @@
               orphan = true;
             }
           ];
+          open = [
+            {
+              run = ''xdg-open "$@"'';
+              desc = "Open";
+            }
+          ];
         };
         preview = {
           wrap = "yes";
+        };
+        open = {
+          append_rules = [
+            {
+              name = "*";
+              use = "open";
+            }
+          ];
+          rules = [
+            {
+              mime = "text/*";
+              use = "edit";
+            }
+            {
+              mime = "video/*";
+              use = "play";
+            }
+            {
+              mime = "audio/*";
+              use = "play";
+            }
+            {
+              mime = "applications/pdf";
+              use = "read";
+            }
+            {
+              name = "*.cbr";
+              use = "read";
+            }
+            {
+              name = "*.epub";
+              use = "read";
+            }
+            {
+              name = "*.djvu";
+              use = "read";
+            }
+          ];
         };
       };
     };
