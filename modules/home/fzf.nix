@@ -14,6 +14,7 @@
       defaultOptions = [
         "--border=rounded"
         "--height=30%"
+        "--hidden"
       ];
     };
   };
