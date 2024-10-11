@@ -22,6 +22,25 @@ in {
             search = {
               force = true;
               engines = {
+                "Nix Packages" = {
+                  urls = [
+                    {
+                      template = "https://search.nixos.org/packages";
+                      params = [
+                        {
+                          name = "type";
+                          value = "packages";
+                        }
+                        {
+                          name = "query";
+                          value = "{searchTerms}";
+                        }
+                      ];
+                    }
+                  ];
+                  icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+                  definedAliases = ["@np"];
+                };
                 "Brave Search" = {
                   urls = [{template = "https://search.brave.com/search?q={searchTerms}";}];
                 };
