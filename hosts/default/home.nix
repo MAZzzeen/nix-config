@@ -51,6 +51,8 @@
     cava
     zathura
     qbittorrent
+    eza
+    lxde.lxsession
     btop
     nsxiv
     slurp

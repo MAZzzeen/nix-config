@@ -69,7 +69,6 @@
 
   programs = {
     zsh.enable = true;
-    hyprland.enable = true;
     xfconf.enable = true;
     file-roller.enable = true;
     thunar = {
@@ -112,18 +111,8 @@
     git
     wget
     eza
-    rofi-wayland
     tree
-    mako
     killall
-    waybar
-    lxde.lxsession
-    wlogout
-    hyprpaper
-    hypridle
-    hyprlock
-    qt5.qtwayland
-    kdePackages.qtwayland
   ];
 
   home-manager = {
