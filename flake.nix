@@ -2,7 +2,6 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs-stable.url = "github:nixos/nixpkgs/24.05";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
@@ -23,16 +22,9 @@
   outputs = {
     self,
     nixpkgs,
-    nixpkgs-stable,
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    overlay-stable = final: prev: {
-      stable = import nixpkgs-stable {
-        inherit system;
-        config.allowUnfree = true;
-      };
-    };
   in {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
@@ -42,7 +34,7 @@
           config,
           pkgs,
           ...
-        }: {nixpkgs.overlays = [overlay-stable];})
+        }: {})
         inputs.home-manager.nixosModules.default
         ./hosts/default/configuration.nix
       ];
