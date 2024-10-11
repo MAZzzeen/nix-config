@@ -17,6 +17,14 @@
           comment = "Launch Windows application";
           mimeType = ["application/vnd.microsoft.portable-executable"];
         };
+        nsxiv = {
+          name = "Nsxiv";
+          genericName = "Image Viewer";
+          exec = "nsxiv %F";
+          terminal = false;
+          comment = "image viewer";
+          mimeType = ["image/*"];
+        };
       };
       mimeApps = {
         enable = true;
@@ -27,6 +35,8 @@
         };
         defaultApplications = {
           "application/vnd.microsoft.portable-executable" = "wine.desktop";
+          "image/*" = "nsxiv.desktop";
+          "*.cbr" = "zathura.desktop";
         };
       };
     };
