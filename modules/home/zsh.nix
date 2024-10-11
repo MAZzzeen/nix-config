@@ -30,7 +30,6 @@
       initExtraBeforeCompInit = "fastfetch";
       envExtra = "
       WORDCHARS='*?[]~=&;!#$%^(){}<>'
-      FZF_COMPLETION_TRIGGER='tab'
       ";
       initExtra = ''
                bindkey "^[[1;5C" forward-word
