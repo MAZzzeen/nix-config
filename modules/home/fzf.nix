@@ -13,7 +13,7 @@
       enableZshIntegration = true;
       defaultOptions = [
         "--border=rounded"
-        "--height=40%"
+        "--height=30%"
       ];
     };
   };
