@@ -79,6 +79,7 @@
         lsp = {
           enable = true;
           servers = {
+            statix.enable = true;
             nil_ls = {
               enable = true;
               autostart = true;

@@ -18,6 +18,7 @@
     ./waybar.nix
     ./zoxide.nix
     ./fzf.nix
+    ./yazi.nix
     ./rofi.nix
     ./zsh.nix
     ./mimeapps.nix

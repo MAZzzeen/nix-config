@@ -34,6 +34,7 @@
   rofi.enable = true;
   fzf.enable = true;
   zoxide.enable = true;
+  yazi.enable = true;
 
   programs.bash.enable = true;
 
