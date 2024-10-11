@@ -112,6 +112,7 @@
     wget
     eza
     tree
+    file
     killall
   ];
 
