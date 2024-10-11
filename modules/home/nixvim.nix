@@ -79,17 +79,17 @@
         lsp = {
           enable = true;
           servers = {
-            # nil_ls = {
-            #   enable = true;
-            #   autostart = true;
-            #   settings = {
-            #     nix = {
-            #       flake = {
-            #         autoArchive = true;
-            #       };
-            #     };
-            #   };
-            # };
+            nil_ls = {
+              enable = true;
+              autostart = true;
+              settings = {
+                nix = {
+                  flake = {
+                    autoArchive = true;
+                  };
+                };
+              };
+            };
             pylsp.enable = true;
             lua_ls.enable = true;
           };
