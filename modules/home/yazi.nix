@@ -18,35 +18,32 @@
         };
         opener = ''
           edit = [
-            {
-              run = "nvim '$@'",
-              block = true
-            }
+            { run = "nvim '$@'", block = true }
           ]
-          play = [
-            {
-              run = "mpv '$@'",
-              orphan = true
-            }
-          ]
-          read = [
-            {
-              run = "zathura '$@'",
-              orphan = true
-            }
-          ]
-          view = [
-            {
-              run = "nsxiv '$@'",
-              orphan = true
-            }
-          ]
-          open = [
-            {
-              run = "xdg-open '$@'",
-              desc = "Open"
-            }
-          ]
+                    play = [
+                      {
+                        run = "mpv '$@'",
+                        orphan = true
+                      }
+                    ]
+                    read = [
+                      {
+                        run = "zathura '$@'",
+                        orphan = true
+                      }
+                    ]
+                    view = [
+                      {
+                        run = "nsxiv '$@'",
+                        orphan = true
+                      }
+                    ]
+                    open = [
+                      {
+                        run = "xdg-open '$@'",
+                        desc = "Open"
+                      }
+                    ]
         '';
         preview = {
           wrap = "yes";
