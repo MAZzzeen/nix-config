@@ -34,19 +34,6 @@
           mimeType = ["text/*"];
         };
       };
-      mimeApps = {
-        enable = true;
-        associations.added = {
-          "application/vnd.microsoft.portable-executable" = "wine.desktop";
-          "text/plain" = "Alacritty.desktop;neovim.desktop;neovide.desktop;nvim.desktop;";
-          "application/zip" = "org.gnome.FileRoller.desktop;";
-          "text/*" = "neovim.desktop";
-        };
-        defaultApplications = {
-          "application/vnd.microsoft.portable-executable" = "wine.desktop";
-          "text/*" = "neovim.desktop";
-        };
-      };
     };
   };
 }
