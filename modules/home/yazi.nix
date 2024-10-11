@@ -16,7 +16,7 @@
           sort_dir_first = true;
           scrolloff = 5;
         };
-        opener = {
+        opener = ''
           edit = [
             {
               run = "nvim '$@'";
@@ -47,7 +47,7 @@
               desc = "Open";
             }
           ];
-        };
+        '';
         preview = {
           wrap = "yes";
         };
