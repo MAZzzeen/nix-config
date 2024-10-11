@@ -11,6 +11,7 @@
     programs.zsh = {
       enable = true;
       enableCompletion = true;
+      autocd = true;
       autosuggestion.enable = true;
       autosuggestion.strategy = ["history" "completion"];
       defaultKeymap = "emacs";
@@ -24,15 +25,16 @@
         ignoreAllDups = true;
         path = "$HOME/.config/.zhist";
         save = 100000;
-        share = false;
+        share = true;
       };
       initExtraBeforeCompInit = "fastfetch";
       envExtra = "WORDCHARS='*?[]~=&;!#$%^(){}<>'";
       initExtra = ''
-        bindkey "^[[1;5C" forward-word
-        bindkey "^[[1;5D" backward-word
-        bindkey '^H' backward-kill-word
-        eval "$(starship init zsh)"
+               bindkey "^[[1;5C" forward-word
+               bindkey "^[[1;5D" backward-word
+               bindkey '^H' backward-kill-word
+        zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+               eval "$(starship init zsh)"
       '';
       shellAliases = {
         ls = "eza --icons -la";
