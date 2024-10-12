@@ -35,6 +35,7 @@
       inherit system;
       modules = [
         inputs.home-manager.nixosModules.default
+        inputs.stylix.nixosModules.stylix
         ./hosts/default/configuration.nix
       ];
     };
