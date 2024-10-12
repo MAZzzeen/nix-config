@@ -10,6 +10,7 @@
 
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
+    # inputs.stylix.nixosModules.stylix
     ./../../modules/home/configs.nix
   ];
 
