@@ -125,6 +125,7 @@
 
                tooltip label {
                  color: ${base04};
+        }
 
 
                #workspaces button.empty {
