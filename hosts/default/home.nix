@@ -25,7 +25,7 @@
   hyprlock.enable = true;
   hyprpaper.enable = false;
   mpv.enable = true;
-  qttheme.enable = false;
+  qttheme.enable = true;
   firefox.enable = true;
   waybar.enable = true;
   zsh.enable = true;
