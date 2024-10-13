@@ -27,7 +27,7 @@
       enable = true;
       autoCmd = [
         {
-          command = "if &filetype == 'alpha' | set nonumber | endif";
+          command = "if &filetype == 'dashboard' | set nonumber | endif";
           event = ["BufEnter"];
         }
       ];
@@ -42,7 +42,7 @@
                    end,
              })
              vim.api.nvim_create_autocmd("FileType", {
-               pattern = "alpha",
+               pattern = "dashboard",
                callback = function()
                vim.schedule(
                  function()
@@ -54,7 +54,7 @@
                end,
              })
              vim.api.nvim_create_autocmd("BufLeave", {
-               pattern = "alpha",
+               pattern = "dashboard",
                callback = function()
                  vim.opt.number = true
                  vim.opt.relativenumber = true
@@ -127,63 +127,59 @@
           settings = {
             exclude = {
               buftypes = ["terminal"];
-              filetypes = ["alpha"];
+              filetypes = ["dashboard"];
             };
           };
         };
         telescope = {
           enable = true;
         };
-        # dashboard = {
-        #   enable = true;
-        #   settings = {
-        #     theme = "hyper";
-        #     config = {
-        #       header = [
-        #         ""
-        #         ""
-        #         "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
-        #         "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
-        #         "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
-        #         "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
-        #         "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
-        #         "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
-        #         ""
-        #         ""
-        #       ];
-        #       shortcut = [
-        #         {
-        #           icon = " ";
-        #           icon_hl = "@variable";
-        #           desc = "Files";
-        #           group = "Label";
-        #           action = "Telescope find_files hidden=true";
-        #           key = "f";
-        #         }
-        #         {
-        #           icon = "󱄅 ";
-        #           icon_hl = "@variable";
-        #           desc = "Nix Config";
-        #           group = "Label";
-        #           action = "Telescope find_files cwd=~/.config/nixos";
-        #           key = "c";
-        #         }
-        #         {
-        #           icon = " ";
-        #           icon_hl = "@variable";
-        #           desc = "New File";
-        #           group = "Label";
-        #           action = "enew";
-        #           key = "n";
-        #         }
-        #       ];
-        #       footer = ["Made with ❤️"];
-        #     };
-        #   };
-        # };
-        alpha = {
+        dashboard = {
           enable = true;
-          theme = "startify";
+          settings = {
+            theme = "hyper";
+            config = {
+              header = [
+                ""
+                ""
+                "/033[31m███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗\033[0m"
+                "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
+                "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
+                "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
+                "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
+                "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
+                ""
+                ""
+              ];
+              shortcut = [
+                {
+                  icon = " ";
+                  icon_hl = "@variable";
+                  desc = "Files";
+                  group = "Label";
+                  action = "Telescope find_files hidden=true";
+                  key = "f";
+                }
+                {
+                  icon = "󱄅 ";
+                  icon_hl = "@variable";
+                  desc = "Nix Config";
+                  group = "Label";
+                  action = "Telescope find_files cwd=~/.config/nixos";
+                  key = "c";
+                }
+                {
+                  icon = " ";
+                  icon_hl = "@variable";
+                  desc = "New File";
+                  group = "Label";
+                  action = "enew";
+                  key = "n";
+                }
+              ];
+              footer = ["Made with ❤️"];
+            };
+          };
         };
         treesitter = {
           enable = true;
@@ -202,7 +198,7 @@
             tabpages = false;
             sidebar_filetypes = {
               NvimTree = true;
-              alpha = true;
+              dashboard = true;
             };
           };
         };
@@ -211,7 +207,7 @@
           settings = {
             options = {
               component_separators = "|";
-              disabled_filetypes = ["alpha" "NvimTree"];
+              disabled_filetypes = ["dashboard" "NvimTree"];
               section_separators = {
                 left = "";
                 right = "";
