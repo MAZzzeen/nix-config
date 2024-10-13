@@ -183,7 +183,7 @@
         # };
         alpha = {
           enable = true;
-          theme = "startify";
+          theme = "dashboard";
         };
         treesitter = {
           enable = true;
