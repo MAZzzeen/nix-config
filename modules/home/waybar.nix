@@ -96,7 +96,7 @@
       };
       style = with config.lib.stylix.colors.withHashtag; ''
                   window#waybar {
-        background: ${base01};
+        background: ${base03};
                       color: white;
                       border-radius: 20px;
                   }
