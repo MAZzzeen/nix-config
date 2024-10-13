@@ -12,9 +12,6 @@
       targets = {
         waybar = {
           enable = false;
-          enableCenterBackColors = true;
-          enableLeftBackColors = true;
-          enableRightBackColors = true;
         };
       };
     };
