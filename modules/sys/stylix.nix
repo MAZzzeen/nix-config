@@ -12,7 +12,7 @@
       enable = true;
       polarity = "dark";
       image = ./../../Backgrounds/Wallpaper.jpg;
-      # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
       autoEnable = true;
       fonts = {
         serif = config.stylix.fonts.sansSerif;

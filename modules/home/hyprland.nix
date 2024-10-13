@@ -34,7 +34,7 @@
           ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
         ];
         bind = [
-          "SUPER, Return, exec, alacritty"
+          "SUPER, Return, exec, kitty"
           "SUPER, C, killactive,"
           "SUPER, M, exit,"
           "SUPER, E, exec, thunar"

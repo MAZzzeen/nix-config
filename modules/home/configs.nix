@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./alacritty.nix
+    ./kitty.nix
     ./fastfetch.nix
     ./hypridle.nix
     ./hyprlock.nix
