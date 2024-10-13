@@ -107,7 +107,7 @@
         padding-left: 8px;
         padding-right: 12px;
         margin-top: 4px;
-        margin-bottom: 0px;
+        margin-bottom: 4px;
         margin-left: 9px;
         }
 

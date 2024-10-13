@@ -11,7 +11,7 @@
     stylix = {
       targets = {
         waybar = {
-          enable = true;
+          enable = false;
           enableCenterBackColors = true;
           enableLeftBackColors = true;
           enableRightBackColors = true;
