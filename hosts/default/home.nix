@@ -23,7 +23,7 @@
   starship.enable = true;
   wlogout.enable = true;
   cava.enable = true;
-  gtktheme.enable = false;
+  icons.enable = true;
   hyprland.enable = true;
   hyprlock.enable = true;
   hyprpaper.enable = false;

@@ -11,7 +11,7 @@
     ./starship.nix
     ./wlogout.nix
     ./cava.nix
-    ./gtktheme.nix
+    ./icons.nix
     ./stylix.nix
     ./hyprland.nix
     ./hyprpaper.nix
