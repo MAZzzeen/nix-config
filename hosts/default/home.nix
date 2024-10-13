@@ -13,7 +13,7 @@
     ./../../modules/home/configs.nix
   ];
 
-  stylix.enable = true;
+  sstylix.enable = true;
 
   alacritty.enable = true;
   kitty.enable = false;
