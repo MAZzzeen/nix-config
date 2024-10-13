@@ -14,7 +14,7 @@ in {
     firefox.enable = lib.mkEnableOption "enables firefox";
   };
   config =
-    lib.mkIf config.qttheme.enable {
+    lib.mkIf config.firefox.enable {
       programs.firefox = {
         enable = true;
         profiles = {
