@@ -102,9 +102,9 @@
                }
 
                #workspaces {
-               border: 0px solid ${base02};
+               border: 0px solid ${base03};
                border-radius: 20px;
-               background: ${base02};
+               background: ${base03};
                padding-left: 8px;
                padding-right: 12px;
                margin-top: 4px;
