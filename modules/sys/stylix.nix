@@ -10,6 +10,7 @@
   config = lib.mkIf config.sstylix.enable {
     stylix = {
       enable = true;
+      polarity = "dark";
       image = ./../../Backgrounds/Wallpaper.jpg;
       # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
       autoEnable = true;
