@@ -3,16 +3,9 @@
   config,
   pkgs,
   ...
-}: let
-  yazi-plugins = pkgs.fetchFromGitHub {
-    owner = "yazi-rs";
-    repo = "plugins";
-    rev = "...";
-    hash = "sha256-...";
-  };
-in {
+}: {
   options = {
-    yazi.enable = lib.mkEnableOption "enables rofi";
+    yazi.enable = lib.mkEnableOption "enables yazi";
   };
   config = lib.mkIf config.yazi.enable {
     programs.yazi = {
@@ -28,12 +21,6 @@ in {
           wrap = "yes";
         };
       };
-      # plugins = {
-      #   full-border = "${yazi-plugins}/full-border.yazi";
-      # };
-      initLua = ''
-        require("full-border"):setup()
-      '';
     };
   };
 }
