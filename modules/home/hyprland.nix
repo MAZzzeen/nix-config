@@ -37,7 +37,7 @@
           "SUPER, Return, exec, alacritty"
           "SUPER, C, killactive,"
           "SUPER, M, exit,"
-          "SUPER, E, exec, thunar"
+          "SUPER, E, exec, yazi"
           "SUPER, V, togglefloating,"
           "SUPER, Space, exec, rofi -show drun -show-icons"
           "SUPER, P, pseudo,"
