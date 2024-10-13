@@ -27,7 +27,7 @@
       enable = true;
       autoCmd = [
         {
-          command = "if &filetype == 'dashboard' | set nonumber | endif";
+          command = "if &filetype == 'alpha' | set nonumber | endif";
           event = ["BufEnter"];
         }
       ];
@@ -42,7 +42,7 @@
                    end,
              })
              vim.api.nvim_create_autocmd("FileType", {
-               pattern = "dashboard",
+               pattern = "alpha",
                callback = function()
                vim.schedule(
                  function()
@@ -54,7 +54,7 @@
                end,
              })
              vim.api.nvim_create_autocmd("BufLeave", {
-               pattern = "dashboard",
+               pattern = "alpha",
                callback = function()
                  vim.opt.number = true
                  vim.opt.relativenumber = true
@@ -127,7 +127,7 @@
           settings = {
             exclude = {
               buftypes = ["terminal"];
-              filetypes = ["dashboard"];
+              filetypes = ["alpha"];
             };
           };
         };
@@ -183,7 +183,7 @@
         # };
         alpha = {
           enable = true;
-          theme = "dashboard";
+          theme = "startify";
         };
         treesitter = {
           enable = true;
@@ -202,7 +202,7 @@
             tabpages = false;
             sidebar_filetypes = {
               NvimTree = true;
-              dashboard = true;
+              alpha = true;
             };
           };
         };
@@ -211,7 +211,7 @@
           settings = {
             options = {
               component_separators = "|";
-              disabled_filetypes = ["dashboard" "NvimTree"];
+              disabled_filetypes = ["alpha" "NvimTree"];
               section_separators = {
                 left = "";
                 right = "";
