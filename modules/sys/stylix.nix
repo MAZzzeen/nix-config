@@ -14,6 +14,14 @@
       polarity = "dark";
       image = ./../../Backgrounds/Wallpaper.jpg;
       base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+      cursor = {
+        package = pkgs.material-cursors;
+        name = "Material_dark_cursors";
+      };
+      # icons = {
+      #   package = pkgs.qogir-icon-theme;
+      #   name = "Qogir-dark";
+      # };
       fonts = {
         serif = config.stylix.fonts.sansSerif;
 
