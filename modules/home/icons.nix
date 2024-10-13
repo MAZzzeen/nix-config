@@ -10,8 +10,14 @@
   config = lib.mkIf config.icons.enable {
     gtk = {
       enable = true;
-      iconTheme.package = pkgs.qogir-icon-theme;
-      iconTheme.name = "Qogir-dark";
+      iconTheme = {
+        package = pkgs.qogir-icon-theme;
+        name = "Qogir-dark";
+      };
+      cursorTheme = {
+        package = pkgs.material-cursors;
+        name = "Material_dark_cursors";
+      };
     };
   };
 }
