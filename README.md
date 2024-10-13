@@ -1,7 +1,7 @@
 # nix-config
 
-![alt text](https://i.imgur.com/0VKtZMI.png)
-![alt_text](https://i.imgur.com/AYVNs6S.png)
+![alt text](https://i.imgur.com/5Kd9qGd.png)
+![alt_text](https://i.imgur.com/xjU0FVj.png)
 
 my nix config
 

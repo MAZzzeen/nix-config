@@ -134,52 +134,56 @@
         telescope = {
           enable = true;
         };
-        dashboard = {
+        # dashboard = {
+        #   enable = true;
+        #   settings = {
+        #     theme = "hyper";
+        #     config = {
+        #       header = [
+        #         ""
+        #         ""
+        #         "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
+        #         "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
+        #         "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
+        #         "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
+        #         "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
+        #         "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
+        #         ""
+        #         ""
+        #       ];
+        #       shortcut = [
+        #         {
+        #           icon = " ";
+        #           icon_hl = "@variable";
+        #           desc = "Files";
+        #           group = "Label";
+        #           action = "Telescope find_files hidden=true";
+        #           key = "f";
+        #         }
+        #         {
+        #           icon = "󱄅 ";
+        #           icon_hl = "@variable";
+        #           desc = "Nix Config";
+        #           group = "Label";
+        #           action = "Telescope find_files cwd=~/.config/nixos";
+        #           key = "c";
+        #         }
+        #         {
+        #           icon = " ";
+        #           icon_hl = "@variable";
+        #           desc = "New File";
+        #           group = "Label";
+        #           action = "enew";
+        #           key = "n";
+        #         }
+        #       ];
+        #       footer = ["Made with ❤️"];
+        #     };
+        #   };
+        # };
+        alpha = {
           enable = true;
-          settings = {
-            theme = "hyper";
-            config = {
-              header = [
-                ""
-                ""
-                "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
-                "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
-                "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
-                "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
-                "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
-                "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
-                ""
-                ""
-              ];
-              shortcut = [
-                {
-                  icon = " ";
-                  icon_hl = "@variable";
-                  desc = "Files";
-                  group = "Label";
-                  action = "Telescope find_files hidden=true";
-                  key = "f";
-                }
-                {
-                  icon = "󱄅 ";
-                  icon_hl = "@variable";
-                  desc = "Nix Config";
-                  group = "Label";
-                  action = "Telescope find_files cwd=~/.config/nixos";
-                  key = "c";
-                }
-                {
-                  icon = " ";
-                  icon_hl = "@variable";
-                  desc = "New File";
-                  group = "Label";
-                  action = "enew";
-                  key = "n";
-                }
-              ];
-              footer = ["Made with ❤️"];
-            };
-          };
+          theme = "startify";
         };
         treesitter = {
           enable = true;
