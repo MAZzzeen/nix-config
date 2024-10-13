@@ -128,7 +128,7 @@
 
 
         #workspaces button.empty {
-          color: gray;
+          color: #000000;
 
 
         #workspaces button.active {
