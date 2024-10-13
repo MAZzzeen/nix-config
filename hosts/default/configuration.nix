@@ -14,6 +14,8 @@
     ./../../modules/sys/main.nix
   ];
 
+  sstylix.enable = true;
+
   tuigreet.enable = true;
 
   nixpkgs.config.allowUnfree = true;
@@ -101,11 +103,6 @@
       fira-code-symbols
       (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "Inconsolata"];})
     ];
-    fontconfig = {
-      defaultFonts = {
-        emoji = ["Noto Color Emoji"];
-      };
-    };
   };
 
   environment.systemPackages = with pkgs; [

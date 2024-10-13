@@ -43,7 +43,7 @@ echo "NixOS Rebuilding with option: $OPTION..."
 git add .
 
 # Execute the rebuild command
-sudo nixos-rebuild switch --flake ".#$OPTION" &> >(tee -a nixos-switch.log) || (
+sudo nixos-rebuild switch --flake ".#$OPTION" &> nixos-switch.log || (
     cat nixos-switch.log | grep --color error && false
 )
 

@@ -20,12 +20,12 @@
   starship.enable = true;
   wlogout.enable = true;
   cava.enable = true;
-  gtktheme.enable = true;
+  gtktheme.enable = false;
   hyprland.enable = true;
   hyprlock.enable = true;
-  hyprpaper.enable = true;
+  hyprpaper.enable = false;
   mpv.enable = true;
-  qttheme.enable = true;
+  qttheme.enable = false;
   firefox.enable = true;
   waybar.enable = true;
   zsh.enable = true;

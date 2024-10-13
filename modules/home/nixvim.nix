@@ -62,7 +62,6 @@
                  vim.opt.cursorline = true
                end,
              })'';
-      colorschemes.nord.enable = true;
       plugins = {
         nvim-tree = {
           enable = true;

@@ -88,9 +88,6 @@
 
           border_size = 2;
 
-          "col.active_border" = "rgba(8fbcbbee) rgba(5e81acee) 45deg";
-          "col.inactive_border" = "rgba(3b4252aa)";
-
           resize_on_border = false;
 
           layout = "dwindle";
@@ -104,7 +101,6 @@
           drop_shadow = true;
           shadow_range = 4;
           shadow_render_power = 3;
-          "col.shadow" = "rgba(1a1a1aee)";
 
           blur = {
             enabled = true;
