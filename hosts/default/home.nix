@@ -15,8 +15,8 @@
 
   stylix.enable = true;
 
-  alacritty.enable = false;
-  kitty.enable = true;
+  alacritty.enable = true;
+  kitty.enable = false;
   fastfetch.enable = true;
   hypridle.enable = true;
   mako.enable = true;

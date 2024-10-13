@@ -15,7 +15,10 @@
       base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
       autoEnable = true;
       fonts = {
-        serif = config.stylix.fonts.sansSerif;
+        serif = {
+          package = pkgs.fira-code;
+          name = "FiraCode Nerd Font Mono";
+        };
 
         sansSerif = {
           package = pkgs.dejavu_fonts;
