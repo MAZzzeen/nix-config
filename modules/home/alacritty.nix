@@ -12,6 +12,10 @@
     programs.alacritty = {
       enable = true;
       settings = {
+        font.normal = lib.mkForce {
+          family = "FiraCode Nerd Font Mono";
+          style = "Regular";
+        };
         font = {
           size = 12;
         };

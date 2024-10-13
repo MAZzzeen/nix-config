@@ -13,12 +13,8 @@
       polarity = "dark";
       image = ./../../Backgrounds/Wallpaper.jpg;
       base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-      autoEnable = true;
       fonts = {
-        serif = {
-          package = pkgs.fira-code;
-          name = "FiraCode Nerd Font Mono";
-        };
+        serif = config.stylix.fonts.sansSerif;
 
         sansSerif = {
           package = pkgs.dejavu_fonts;

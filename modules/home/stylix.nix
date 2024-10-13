@@ -10,6 +10,7 @@
   config = lib.mkIf config.sstylix.enable {
     stylix = {
       targets = {
+        alacritty.enable = false;
         waybar = {
           enable = true;
           enableCenterBackColors = true;
