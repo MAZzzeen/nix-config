@@ -95,117 +95,118 @@
         };
       };
       style = with config.lib.stylix.colors.withHashtag; ''
-        window#waybar {
-          background: #000000;
-          color: white;
-          border-radius: 20px;
-        }
+         window#waybar {
+           background: #000000;
+           color: white;
+           border-radius: 20px;
+         }
 
-        #workspaces {
-          border: 0px solid ${base03};
-          border-radius: 20px;
-          background: ${base03};
-          padding-left: 8px;
-                            padding-right: 12px;
-                            margin-top: 4px;
-                            margin-bottom: 4px;
-                            margin-left: 9px;
-                          }
+         #workspaces {
+           border: 0px solid ${base03};
+           border-radius: 20px;
+           background: ${base03};
+           padding-left: 8px;
+                             padding-right: 12px;
+                             margin-top: 4px;
+                             margin-bottom: 4px;
+                             margin-left: 9px;
+                           }
 
-                          #workspaces button {
-                            padding-left: 10px;
-                            padding-right: 10px;
-                            background: transparent;
-                            color: ${base06};
-                            font-size: 15px;
-                          }
+                           #workspaces button {
+                             padding-left: 10px;
+                             padding-right: 10px;
+                             background: transparent;
+                             color: ${base06};
+                             font-size: 15px;
+                           }
 
-                            tooltip {
-                            background: ${base02};
-                          }
+                             tooltip {
+                             background: ${base02};
+                           }
 
-                          tooltip label {
-                            color: ${base04};
-                   }
-
-
-                          #workspaces button.empty {
-                            color: ${base04};
-                   }
+                           tooltip label {
+                             color: ${base04};
+                    }
 
 
-                          #workspaces button.active {
-                            color: ${base0B};
-                   }
+                           #workspaces button.empty {
+                             color: ${base04};
+        opacity: 0.5;
+                    }
 
 
-                          #workspaces button.urgent {
-                            color: ${base08};
-                          }
+                           #workspaces button.active {
+                             color: ${base0B};
+                    }
 
-                          #workspaces button:hover {
-                            border: none;
-                            text-shadow: none;
-                            background: none;
-                            box-shadow: none;
-                          }
 
-                          #custom-Archmenubutton {
-                            padding-left: 20px;
-                            padding-right: 25px;
-                            border-radius: 20px;
-                            margin: 4px;
-                            font-size: 20px;
-                            background: ${base04};
-                            color: #5e81ac;
-                          }
+                           #workspaces button.urgent {
+                             color: ${base08};
+                           }
 
-                          #window {
-                            color: ${base04};
-                            font-size: 16px;
-                          }
+                           #workspaces button:hover {
+                             border: none;
+                             text-shadow: none;
+                             background: none;
+                             box-shadow: none;
+                           }
 
-                          #custom-powerbutton {
-                            background: ${base08};
-                            color: ${base04};
-                            border-radius: 20px;
-                            margin: 4px;
-                            padding-left: 20px;
-                            padding-right: 25px;
-                            font-size: 20px;
-                          }
+                           #custom-Archmenubutton {
+                             padding-left: 20px;
+                             padding-right: 25px;
+                             border-radius: 20px;
+                             margin: 4px;
+                             font-size: 20px;
+                             background: ${base04};
+                             color: #5e81ac;
+                           }
 
-                          #rest {
-                            background: ${base00};
-                            border-radius: 20px;
-                            margin: 4px;
-                            padding-left: 20px;
-                            padding-right: 20px;
-                            margin-right: 8px;
-                          }
+                           #window {
+                             color: ${base04};
+                             font-size: 16px;
+                           }
 
-                          #clock {
-                            padding-left: 25px;
-                            color: ${base0A};
-                          }
+                           #custom-powerbutton {
+                             background: ${base08};
+                             color: ${base04};
+                             border-radius: 20px;
+                             margin: 4px;
+                             padding-left: 20px;
+                             padding-right: 25px;
+                             font-size: 20px;
+                           }
 
-                          #wireplumber {
-                            padding-left: 25px;
-                            color: ${base0D};
-                          }
+                           #rest {
+                             background: ${base00};
+                             border-radius: 20px;
+                             margin: 4px;
+                             padding-left: 20px;
+                             padding-right: 20px;
+                             margin-right: 8px;
+                           }
 
-                          #language {
-                            padding-left: 25px;
-                            color: ${base0C};
-                          }
+                           #clock {
+                             padding-left: 25px;
+                             color: ${base0A};
+                           }
 
-                          #tray {
-                            padding-right: 10px;
-                          }
+                           #wireplumber {
+                             padding-left: 25px;
+                             color: ${base0D};
+                           }
 
-                          #custom-clipboard {
-                            color: ${base07};
-                          }
+                           #language {
+                             padding-left: 25px;
+                             color: ${base0C};
+                           }
+
+                           #tray {
+                             padding-right: 10px;
+                           }
+
+                           #custom-clipboard {
+                             color: ${base07};
+                           }
       '';
     };
   };
