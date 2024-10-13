@@ -8,7 +8,7 @@
     waybar.enable = lib.mkEnableOption "enables waybar";
   };
   config = lib.mkIf config.waybar.enable {
-    stylix = {
+    stylix = lib.mkForce {
       targets = {
         waybar = {
           enable = false;
