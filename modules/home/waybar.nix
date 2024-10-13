@@ -130,7 +130,7 @@
 
 
                           #workspaces button.empty {
-                            color: gray;
+                            color: ${base04};
                    }
 
 
