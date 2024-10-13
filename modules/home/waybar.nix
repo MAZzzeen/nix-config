@@ -101,9 +101,9 @@
         }
 
         #workspaces {
-          border: 0px solid #${base03};
+          border: 0px solid ${base03};
           border-radius: 20px;
-          background: #${base03} ;
+          background: ${base03} ;
           padding-left: 8px;
           padding-right: 12px;
           margin-top: 4px;
@@ -115,16 +115,16 @@
           padding-left: 10px;
           padding-right: 10px;
           background: transparent;
-          color: #${base06};
+          color: ${base06};
           font-size: 15px;
         }
 
           tooltip {
-          background: #${base02};
+          background: ${base02};
         }
 
         tooltip label {
-          color: #${base04};
+          color: ${base04};
 
 
         #workspaces button.empty {
@@ -132,11 +132,11 @@
 
 
         #workspaces button.active {
-          color: #${base0B};
+          color: ${base0B};
 
 
         #workspaces button.urgent {
-          color: #${base08};
+          color: ${base08};
         }
 
         #workspaces button:hover {
@@ -152,18 +152,18 @@
           border-radius: 20px;
           margin: 4px;
           font-size: 20px;
-          background: #${base04};
+          background: ${base04};
           color: #5e81ac;
         }
 
         #window {
-          color: #${base04};
+          color: ${base04};
           font-size: 16px;
         }
 
         #custom-powerbutton {
-          background: #${base08};
-          color: #${base04};
+          background: ${base08};
+          color: ${base04};
           border-radius: 20px;
           margin: 4px;
           padding-left: 20px;
@@ -172,7 +172,7 @@
         }
 
         #rest {
-          background: #${base00};
+          background: ${base00};
           border-radius: 20px;
           margin: 4px;
           padding-left: 20px;
@@ -182,17 +182,17 @@
 
         #clock {
           padding-left: 25px;
-          color: #${base0A};
+          color: ${base0A};
         }
 
         #wireplumber {
           padding-left: 25px;
-          color: #${base0D};
+          color: ${base0D};
         }
 
         #language {
           padding-left: 25px;
-          color: #${base0C};
+          color: ${base0C};
         }
 
         #tray {
@@ -200,7 +200,7 @@
         }
 
         #custom-clipboard {
-          color: #${base07};
+          color: ${base07};
         }
       '';
     };
