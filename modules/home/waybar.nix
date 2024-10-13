@@ -95,117 +95,116 @@
         };
       };
       style = with config.lib.stylix.colors.withHashtag; ''
-               window#waybar {
-               color: white;
-               border-radius: 20px;
-               }
+        window#waybar {
+        color: white;
+        border-radius: 20px;
+        }
 
-               #workspaces {
-               border: 0px solid ${base02};
-               border-radius: 20px;
-               background: ${base02};
-               padding-left: 8px;
-               padding-right: 12px;
-               margin-top: 4px;
-               margin-bottom: 4px;
-               margin-left: 9px;
-               }
+        #workspaces {
+        border: 0px solid ${base02};
+        border-radius: 20px;
+        background: ${base02};
+        padding-left: 8px;
+        padding-right: 12px;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        margin-left: 9px;
+        }
 
-               #workspaces button {
-               padding-left: 10px;
-               padding-right: 10px;
-               background: transparent;
-               color: ${base06};
-               font-size: 15px;
-               }
-
-               tooltip {
-               background: ${base02};
-               }
-
-               tooltip label {
-               color: ${base04};
-               }
-
-
-               #workspaces button.empty {
-               color: ${base04};
-               opacity: 0.5;
-               }
-
-
-               #workspaces button.active {
-               color: ${base0B};
+        #workspaces button {
+        padding-left: 10px;
+        padding-right: 10px;
         background: transparent;
-               }
+        color: ${base06};
+        font-size: 15px;
+        }
+
+        tooltip {
+        background: ${base02};
+        }
+
+        tooltip label {
+        color: ${base04};
+        }
 
 
-               #workspaces button.urgent {
-               color: ${base08};
-               }
+        #workspaces button.empty {
+        color: ${base04};
+        opacity: 0.5;
+        }
 
-               #workspaces button:hover {
-               border: none;
-               text-shadow: none;
-               background: none;
-               box-shadow: none;
-               }
 
-               #custom-Archmenubutton {
-               padding-left: 20px;
-               padding-right: 25px;
-               border-radius: 20px;
-               margin: 4px;
-               font-size: 20px;
-               background: ${base04};
-               color: #5e81ac;
-                       }
-               #window {
-               color: ${base04};
-               font-size: 16px;
-               }
+        #workspaces button.active {
+        color: ${base0B};
+        }
 
-               #custom-powerbutton {
-               background: ${base08};
-               color: ${base04};
-               border-radius: 20px;
-               margin: 4px;
-               padding-left: 20px;
-               padding-right: 25px;
-               font-size: 20px;
-               }
 
-               #rest {
-               background: ${base01};
-               border-radius: 20px;
-               margin: 4px;
-               padding-left: 20px;
-               padding-right: 20px;
-               margin-right: 8px;
-               }
+        #workspaces button.urgent {
+        color: ${base08};
+        }
 
-               #clock {
-               padding-left: 25px;
-               color: ${base0A};
-               }
+        #workspaces button:hover {
+        border: none;
+        text-shadow: none;
+        background: none;
+        box-shadow: none;
+        }
 
-               #wireplumber {
-               padding-left: 25px;
-               color: ${base0D};
-               }
+        #custom-Archmenubutton {
+        padding-left: 20px;
+        padding-right: 25px;
+        border-radius: 20px;
+        margin: 4px;
+        font-size: 20px;
+        background: ${base04};
+        color: #5e81ac;
+                }
+        #window {
+        color: ${base04};
+        font-size: 16px;
+        }
 
-               #language {
-               padding-left: 25px;
-               color: ${base0C};
-               }
+        #custom-powerbutton {
+        background: ${base08};
+        color: ${base04};
+        border-radius: 20px;
+        margin: 4px;
+        padding-left: 20px;
+        padding-right: 25px;
+        font-size: 20px;
+        }
 
-               #tray {
-               padding-right: 10px;
-               }
+        #rest {
+        background: ${base01};
+        border-radius: 20px;
+        margin: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 8px;
+        }
 
-               #custom-clipboard {
-               color: ${base07};
-               }
+        #clock {
+        padding-left: 25px;
+        color: ${base0A};
+        }
+
+        #wireplumber {
+        padding-left: 25px;
+        color: ${base0D};
+        }
+
+        #language {
+        padding-left: 25px;
+        color: ${base0C};
+        }
+
+        #tray {
+        padding-right: 10px;
+        }
+
+        #custom-clipboard {
+        color: ${base07};
+        }
       '';
     };
   };
