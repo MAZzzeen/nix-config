@@ -124,7 +124,7 @@
 
           /*tooltip { */
           /* background: #434c5e; */
-          /* border: 1px solid rgba(100, 114, 125, 0.5) */;
+          /* border: 1px solid rgba(100, 114, 125, 0.5) */
 
 
         /*tooltip label {*/
