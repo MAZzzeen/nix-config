@@ -13,6 +13,8 @@
     ./../../modules/home/configs.nix
   ];
 
+  stylix.enable = true;
+
   alacritty.enable = false;
   kitty.enable = true;
   fastfetch.enable = true;

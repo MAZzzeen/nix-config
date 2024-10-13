@@ -12,6 +12,7 @@
     ./wlogout.nix
     ./cava.nix
     ./gtktheme.nix
+    ./stylix.nix
     ./hyprland.nix
     ./hyprpaper.nix
     ./mpv.nix
