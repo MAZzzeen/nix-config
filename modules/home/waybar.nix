@@ -96,17 +96,17 @@
       };
       style = ''
         window#waybar {
-            background: #3b4252;
+            /* background: #3b4252; */
             /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-            color: white;
+            /* color: white; */
             border-radius: 20px;
             /* border: 8px solid #5e81ac; */
         }
 
         #workspaces {
-          border: 0px solid #4c566a;
+          border: 0px solid /* #4c566a */;
           border-radius: 20px;
-          background: #4c566a;
+          /* background: #4c566a*/ ;
           padding-left: 8px;
           padding-right: 12px;
           margin-top: 4px;
@@ -118,30 +118,30 @@
           padding-left: 10px;
           padding-right: 10px;
           background: transparent;
-          color: #eceff4;
+          /* color: #eceff4; */
           font-size: 15px;
         }
 
-        tooltip {
-          background: #434c5e;
+          /*tooltip { */
+          /* background: #434c5e; */
           /* border: 1px solid rgba(100, 114, 125, 0.5) */;
-        }
 
-        tooltip label {
-          color: #d8dee9;
-        }
 
-        #workspaces button.empty {
-          color: #9399A5;
-        }
+        /*tooltip label {*/
+          /*color: #d8dee9;*/
 
-        #workspaces button.active {
-          color: #a3be8c;
-        }
 
-        #workspaces button.urgent {
-          color: #bf616a;
-        }
+        /*#workspaces button.empty {*/
+          /*color: #9399A5;*/
+
+
+        /*#workspaces button.active {*/
+          /*color: #a3be8c;*/
+
+
+        /*#workspaces button.urgent {*/
+          /*color: #bf616a;*/
+        /*} */
 
         #workspaces button:hover {
           border: none;
@@ -156,8 +156,8 @@
           border-radius: 20px;
           margin: 4px;
           font-size: 20px;
-          background: #d8dee9;
-          color: #5e81ac;
+          /* background: #d8dee9; */
+          /* color: #5e81ac; */
         }
 
         /* .modules-right { */
@@ -170,13 +170,13 @@
 
 
         #window {
-          color: #d8dee9;
+          /* color: #d8dee9; */
           font-size: 16px;
         }
 
         #custom-powerbutton {
-          background: #bf616a;
-          color: #d8dee9;
+          /* background: #bf616a; */
+          /* color: #d8dee9; */
           border-radius: 20px;
           margin: 4px;
           padding-left: 20px;
@@ -185,7 +185,7 @@
         }
 
         #rest {
-          background: #303643;
+          /* background: #303643; */
           border-radius: 20px;
           margin: 4px;
           padding-left: 20px;
@@ -195,17 +195,17 @@
 
         #clock {
           padding-left: 25px;
-          color: #ebcb8b;
+          /* color: #ebcb8b; */
         }
 
         #wireplumber {
           padding-left: 25px;
-          color: #81a1c1;
+          /* color: #81a1c1; */
         }
 
         #language {
           padding-left: 25px;
-          color: #88c0d0;
+          /* color: #88c0d0; */
         }
 
         #tray {
@@ -213,7 +213,7 @@
         }
 
         #custom-clipboard {
-          color: #8fbcbb;
+          /* color: #8fbcbb; */
         }
       '';
     };
