@@ -112,7 +112,7 @@
             background-color = mkLiteral "transparent";
             cursor = mkLiteral "pointer";
           };
-          "element normal.active" = lib.mkForce {
+          "element selected.normal" = lib.mkForce {
             background-color = mkLiteral "#000000";
           };
           element-icon = {
