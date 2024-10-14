@@ -40,6 +40,15 @@
           background-color = mkLiteral "transparent";
           children = mkLiteral ''[ "textbox-prompt-colon", "entry", "mode-switcher" ]'';
         };
+        prompt = {
+          enabled = true;
+        };
+        textbox-prompt-colon = {
+          enabled = true;
+          padding = mkLiteral "5px 0px";
+          expand = false;
+          str = "";
+        };
       };
     };
   };
