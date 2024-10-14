@@ -36,7 +36,7 @@
           enabled = true;
           spacing = mkLiteral "10px";
           margin = mkLiteral "0px";
-          padding = mkLiteral "30px";
+          padding = mkLiteral "15px";
           border = mkLiteral "0px solid";
           border-radius = mkLiteral "0px 0px 0px 0px";
           background-color = mkLiteral "transparent";
