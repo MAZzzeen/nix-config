@@ -25,7 +25,7 @@
       in {
         "window" = {
           "margin" = "20";
-          "width" = "45%";
+          "width" = "100";
         };
       };
     };
