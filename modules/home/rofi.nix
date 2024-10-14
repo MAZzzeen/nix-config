@@ -10,7 +10,6 @@
   config = lib.mkIf config.rofi.enable {
     programs.rofi = {
       enable = true;
-      font = lib.mkForce "JetBrains Mono Nerd Font 10";
       plugins = [pkgs.rofi-emoji-wayland];
       package = pkgs.rofi-wayland;
       cycle = true;
