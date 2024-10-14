@@ -14,7 +14,7 @@
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
-        display-drun = " ";
+        display-drun = " ";
         display-emoji = "󰞅 ";
         display-run = " ";
         modi = "drun,run,emoji";
@@ -30,7 +30,7 @@
           width = mkLiteral "600px";
           enabled = true;
           border = mkLiteral "2px solid";
-          border-radius = mkLiteral "20px";
+          border-radius = mkLiteral "15px";
           border-color = mkLiteral "${base0C}";
           cursor = mkLiteral "default";
         };
@@ -42,6 +42,7 @@
           border = mkLiteral "0px solid";
           border-radius = mkLiteral "0px 0px 0px 0px";
           background-color = mkLiteral "transparent";
+          children = mkLiteral ''[ "inputbar", "message", "listview" ]'';
         };
         inputbar = {
           enabled = true;
@@ -51,6 +52,7 @@
           border = mkLiteral "0px solid";
           border-radius = mkLiteral "0px";
           background-color = mkLiteral "transparent";
+          children = mkLiteral ''[ "textbox-prompt-colon", "entry", "mode-switcher" ]'';
         };
         prompt = {
           enabled = true;
@@ -111,6 +113,16 @@
         element-text = {
           vertical-align = mkLiteral "0.5";
           horizontal-align = 0;
+        };
+        mode-switcher = {
+          enabled = true;
+          spacing = mkLiteral "10px";
+          background-color = mkLiteral "transparent";
+        };
+        button = {
+          padding = mkLiteral "5px 10px";
+          border-radius = mkLiteral "10px";
+          cursor = mkLiteral "pointer";
         };
         message = {
           enabled = true;
