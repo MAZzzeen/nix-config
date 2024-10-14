@@ -126,8 +126,8 @@
             background-color = mkLiteral "transparent";
           };
           button = {
-            padding = mkLiteral "5px 10px";
-            border-radius = mkLiteral "30px";
+            padding = mkLiteral "5px 0px";
+            border-radius = mkLiteral "10px";
             cursor = mkLiteral "pointer";
           };
           message = {
