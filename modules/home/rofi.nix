@@ -30,6 +30,16 @@
           border-radius = mkLiteral "10px";
           cursor = mkLiteral "default";
         };
+        inputbar = {
+          enabled = true;
+          spacing = mkLiteral "10px";
+          margin = mkLiteral "0px";
+          padding = mkLiteral "0px";
+          border = mkLiteral "0px solid";
+          border-radius = mkLiteral "0px";
+          background-color = mkLiteral "transparent";
+          children = mkLiteral ''[ "textbox-prompt-colon", "entry", "mode-switcher" ]'';
+        };
       };
     };
   };
