@@ -14,3 +14,6 @@ https://github.com/soulhotel/FF-ULTIMA
 
 and be sure to point to the directory where you have your nix config in rebuild.sh if you plan on using it.
 
+Rofi theme by adi1090x with some modifications. 
+
+https://github.com/adi1090x/rofi
