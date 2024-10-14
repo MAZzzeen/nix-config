@@ -103,6 +103,11 @@
       fira-code-symbols
       (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "Inconsolata"];})
     ];
+    fontconfig = {
+      defaultFonts = {
+        emoji = ["Noto Color Emoji"];
+      };
+    };
   };
 
   environment.systemPackages = with pkgs; [

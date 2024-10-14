@@ -122,12 +122,12 @@
           };
           mode-switcher = {
             enabled = true;
-            spacing = mkLiteral "10px 12px 10px 10px";
+            spacing = mkLiteral "10px";
             background-color = mkLiteral "transparent";
           };
           button = {
             padding = mkLiteral "5px 10px";
-            border-radius = mkLiteral "10px";
+            border-radius = mkLiteral "30px";
             cursor = mkLiteral "pointer";
           };
           message = {
