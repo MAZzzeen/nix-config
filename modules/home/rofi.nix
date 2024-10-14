@@ -123,7 +123,7 @@
           mode-switcher = {
             enabled = true;
             spacing = mkLiteral "10px";
-            margin = mkLiteral "0px 2px 0px 0px";
+            margin = mkLiteral "10px 20px 30px 40px";
             background-color = mkLiteral "transparent";
           };
           button = {
