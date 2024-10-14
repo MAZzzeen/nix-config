@@ -24,7 +24,7 @@
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
         "*" = {
-          width = mkLiteral "45%";
+          width = mkLiteral "20%";
         };
 
         "#inputbar" = {
