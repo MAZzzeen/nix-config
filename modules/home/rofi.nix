@@ -100,9 +100,11 @@
             background-color = mkLiteral "transparent";
             cursor = "default";
           };
-          scrollbar = {
+          scrollbar = lib.mkForce {
             handle-width = mkLiteral "5px";
             border-radius = mkLiteral "10px";
+            background-color = mkLiteral "${base01}";
+            handle-color = mkLiteral "${base03}";
           };
           element = {
             enabled = true;
@@ -114,9 +116,11 @@
           };
           "element selected.normal" = lib.mkForce {
             background-color = mkLiteral "${base03}";
+            text-color = mkLiteral "${base04}";
           };
           "element alternate.normal" = lib.mkForce {
             background-color = mkLiteral "${base00}";
+            text-color = mkLiteral "${base04}";
           };
           element-icon = {
             size = mkLiteral "24px";
@@ -130,14 +134,16 @@
             spacing = mkLiteral "12px";
             background-color = mkLiteral "transparent";
           };
-          button = {
+          button = lib.mkForce {
             padding = mkLiteral "5px 13px 5px 10px";
             background-color = mkLiteral "${base01}";
+            text-color = mkLiteral "${base04}";
             border-radius = mkLiteral "10px";
             cursor = mkLiteral "pointer";
           };
           "button selected" = lib.mkForce {
             background-color = mkLiteral "${base03}";
+            text-color = mkLiteral "${base04}";
           };
           message = {
             enabled = true;

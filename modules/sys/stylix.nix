@@ -14,10 +14,6 @@
       polarity = "dark";
       image = ./../../Backgrounds/Wallpaper.jpg;
       base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-      # icons = {
-      #   package = pkgs.qogir-icon-theme;
-      #   name = "Qogir-dark";
-      # };
       fonts = {
         serif = config.stylix.fonts.sansSerif;
 
