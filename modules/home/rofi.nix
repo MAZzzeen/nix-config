@@ -127,7 +127,7 @@
           };
           button = {
             padding = mkLiteral "5px 13px 5px 10px";
-            background-color = mkLiteral "${base00}";
+            background-color = mkLiteral "${base01}";
             border-radius = mkLiteral "10px";
             cursor = mkLiteral "pointer";
           };
