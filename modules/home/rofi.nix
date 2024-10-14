@@ -30,6 +30,7 @@
           width = mkLiteral "600px";
           enabled = true;
           border-radius = mkLiteral "10px";
+          border-color = "#000000";
           cursor = mkLiteral "default";
         };
         mainbox = {
