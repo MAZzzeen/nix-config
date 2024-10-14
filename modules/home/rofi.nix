@@ -49,6 +49,22 @@
           expand = false;
           str = "";
         };
+        num-filtered-rows = {
+          enabled = true;
+          expand = false;
+        };
+        textbox-num-sep = {
+          enabled = true;
+          expand = false;
+          str = "/";
+        };
+        num-rows = {
+          enabled = true;
+          expand = false;
+        };
+        case-indicator = {
+          enabled = true;
+        };
       };
     };
   };
