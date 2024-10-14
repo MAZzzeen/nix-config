@@ -58,7 +58,7 @@
           };
           "hyprland/language" = {
             format = "󰌌   {}";
-            format-en = "Eng";
+            format-en = "En";
             format-ar = "Ar";
           };
           "wireplumber" = {

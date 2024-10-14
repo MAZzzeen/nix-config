@@ -10,8 +10,10 @@
   config = lib.mkIf config.rofi.enable {
     programs.rofi = {
       enable = true;
-      package = pkgs.rofi-wayland;
       plugins = [pkgs.rofi-emoji];
+      extraConfig = {
+        modi = "drun,emoji";
+      };
     };
   };
 }
