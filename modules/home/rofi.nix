@@ -24,7 +24,8 @@
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
         "window" = {
-          margin = 5;
+          "margin" = "20";
+          "width" = "45%";
         };
       };
     };
