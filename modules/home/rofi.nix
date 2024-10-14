@@ -53,6 +53,14 @@
           prompt = {
             enabled = true;
           };
+          textbox-prompt-colon = {
+            enabled = true;
+            padding = mkLiteral "5px 0px";
+            expand = false;
+            str = mkLiteral "";
+            background-color = mkLiteral "inherit";
+            text-color = mkLiteral "inherit";
+          };
           num-filtered-rows = {
             enabled = true;
             expand = false;
