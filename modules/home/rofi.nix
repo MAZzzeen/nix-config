@@ -8,14 +8,9 @@
     rofi.enable = lib.mkEnableOption "enables rofi";
   };
   config = lib.mkIf config.rofi.enable {
-    nixpkgs.overlays = [
-      (final: prev: {
-        rofi-calc = prev.rofi-calc.override {rofi-unwrapped = prev.rofi-wayland-unwrapped;};
-      })
-    ];
     programs.rofi = {
       enable = true;
-      plugins = [pkgs.rofi-calc];
+      plugins = [pkgs.rofi-emoji-wayland];
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
@@ -24,6 +19,13 @@
         display-dmenu = "Clipboard:";
         modi = "drun,emoji";
         show-icons = true;
+      };
+      theme = let
+        inherit (config.lib.formats.rasi) mkLiteral;
+      in {
+        "*" = {
+          border = 5;
+        };
       };
     };
   };
