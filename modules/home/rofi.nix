@@ -57,7 +57,7 @@
             enabled = true;
             padding = mkLiteral "5px 0px";
             expand = false;
-            str = mkLiteral "";
+            str = "";
             background-color = mkLiteral "inherit";
             text-color = mkLiteral "inherit";
           };
