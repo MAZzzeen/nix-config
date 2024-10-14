@@ -108,6 +108,24 @@
           vertical-align = mkLiteral "0.5";
           horizontal-align = 0;
         };
+        message = {
+          enabled = true;
+          background-color = mkLiteral "transparent";
+        };
+        textbox = {
+          padding = mkLiteral "8px 10px";
+          border-radius = mkLiteral "10px";
+          vertical-align = mkLiteral "0.5";
+          horizontal-align = 0;
+          highlight = mkLiteral "none";
+          blink = true;
+          markup = true;
+        };
+        error-message = {
+          padding = mkLiteral "10px";
+          border = mkLiteral "2px solid";
+          border-radius = mkLiteral "10px";
+        };
       };
     };
   };
