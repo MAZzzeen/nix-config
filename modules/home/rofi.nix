@@ -29,7 +29,8 @@
           transparency = "real";
           width = mkLiteral "600px";
           enabled = true;
-          border-radius = mkLiteral "10px";
+          border = mkLiteral "2px solid";
+          border-radius = mkLiteral "20px";
           border-color = "#000000";
           cursor = mkLiteral "default";
         };
