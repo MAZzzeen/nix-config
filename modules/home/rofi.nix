@@ -65,6 +65,30 @@
         case-indicator = {
           enabled = true;
         };
+        listview = {
+          enabled = true;
+          columns = 1;
+          lines = 8;
+          cycle = true;
+          dynamic = true;
+          scrollbar = true;
+          layout = mkLiteral "vertical";
+          reverse = false;
+          fixed-height = true;
+          fixed-columns = true;
+
+          spacing = mkLiteral "5px";
+          margin = mkLiteral "0px";
+          padding = mkLiteral "0px";
+          border = mkLiteral "0px solid";
+          border-radius = mkLiteral "0px";
+          background-color = mkLiteral "transparent";
+          cursor = "default";
+        };
+        scrollbar = {
+          handle-width = mkLiteral "5px";
+          border-radius = mkLiteral "10px";
+        };
       };
     };
   };
