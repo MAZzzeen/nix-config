@@ -14,7 +14,7 @@
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
-        display-drun = "󱓞";
+        display-drun = "󱓞 ";
         display-emoji = "󰞅";
         display-run = "";
         modi = "drun,run,emoji";
