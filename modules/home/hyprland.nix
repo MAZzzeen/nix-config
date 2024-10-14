@@ -39,7 +39,7 @@
           "SUPER, M, exit,"
           "SUPER, E, exec, alacritty --command yazi"
           "SUPER, V, togglefloating,"
-          "SUPER, Space, exec, rofi -show drun -show-icons"
+          "SUPER, Space, exec, rofi -show drun"
           "SUPER, P, pseudo,"
           "SUPER, J, togglesplit,"
           "SUPER, Escape, exec, wlogout"
