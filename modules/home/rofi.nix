@@ -14,28 +14,21 @@
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
-        display-drun = "Apps:";
-        display-emoji = "Emoji:";
-        display-dmenu = "Clipboard:";
-        modi = "drun,emoji";
+        display-drun = "";
+        display-emoji = "󰞅";
+        display-run = "";
+        modi = "drun,run,emoji";
         show-icons = true;
       };
       theme = let
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
-        "*" = {
-          width = mkLiteral "30%";
-        };
-
-        "#inputbar" = {
-          children = map mkLiteral ["prompt" "entry"];
-        };
-
-        "#textbox-prompt-colon" = {
-          expand = false;
-          str = ":";
-          margin = mkLiteral "0px 0.3em 0em 0em";
-          text-color = mkLiteral "@foreground-color";
+        window = {
+          transparency = "real";
+          width = mkLiteral "600px";
+          enabled = true;
+          border-radius = mkLiteral "10px";
+          cursor = mkLiteral "default";
         };
       };
     };
