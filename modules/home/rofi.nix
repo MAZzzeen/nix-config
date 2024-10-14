@@ -14,7 +14,7 @@
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
-        display-drun = "󱓞 ";
+        display-drun = "󱓞";
         display-emoji = "󰞅";
         display-run = "";
         modi = "drun,run,emoji";
@@ -123,6 +123,7 @@
           mode-switcher = {
             enabled = true;
             spacing = mkLiteral "10px";
+            margin = mkLiteral "0px 0px 2px 0px";
             background-color = mkLiteral "transparent";
           };
           button = {
