@@ -17,14 +17,15 @@
         display-drun = "Apps:";
         display-emoji = "Emoji:";
         display-dmenu = "Clipboard:";
-        modi = "drun,emoji";
+        modi = "combi";
+        combi-modi = "drun,emoji";
         show-icons = true;
       };
       theme = let
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
         "window" = {
-          "margin" = "20";
+          "border" = "20";
           "width" = "100";
         };
       };
