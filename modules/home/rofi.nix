@@ -107,11 +107,13 @@
           element = {
             enabled = true;
             spacing = mkLiteral "10px";
-            margin = mkLiteral "0px";
             padding = mkLiteral "5px 10px";
             border-radius = mkLiteral "10px";
             background-color = mkLiteral "transparent";
             cursor = mkLiteral "pointer";
+          };
+          "element normal.active" = lib.mkForce {
+            background-color = mkLiteral "#000000";
           };
           element-icon = {
             size = mkLiteral "24px";
@@ -122,7 +124,7 @@
           };
           mode-switcher = {
             enabled = true;
-            spacing = mkLiteral "10px";
+            spacing = mkLiteral "12px";
             background-color = mkLiteral "transparent";
           };
           button = {
@@ -130,6 +132,9 @@
             background-color = mkLiteral "${base01}";
             border-radius = mkLiteral "10px";
             cursor = mkLiteral "pointer";
+          };
+          "button selected" = lib.mkForce {
+            background-color = mkLiteral "${base03}";
           };
           message = {
             enabled = true;
