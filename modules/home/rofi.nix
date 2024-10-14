@@ -23,8 +23,8 @@
       theme = let
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
-        "*" = {
-          border = 5;
+        "window" = {
+          margin = 5;
         };
       };
     };
