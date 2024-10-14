@@ -61,6 +61,14 @@
             background-color = mkLiteral "inherit";
             text-color = mkLiteral "inherit";
           };
+          entry = {
+            enabled = true;
+            padding = mkLiteral "5px 0px";
+            background-color = mkLiteral "inherit";
+            cursor = mkLiteral "text";
+            placeholder = "Search...";
+            placeholder-color = mkLiteral "inherit";
+          };
           num-filtered-rows = {
             enabled = true;
             expand = false;
