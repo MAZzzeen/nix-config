@@ -12,7 +12,6 @@
     ./wlogout.nix
     ./cava.nix
     ./icons.nix
-    ./stylix.nix
     ./hyprland.nix
     ./hyprpaper.nix
     ./mpv.nix

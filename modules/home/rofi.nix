@@ -25,13 +25,13 @@
       theme = let
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
-        window = {
+        window = with config.lib.stylix.colors.withHashtag; {
           transparency = "real";
           width = mkLiteral "600px";
           enabled = true;
           border = mkLiteral "2px solid";
           border-radius = mkLiteral "20px";
-          border-color = "#000000";
+          border-color = mkLiteral "${base0C}";
           cursor = mkLiteral "default";
         };
         mainbox = {

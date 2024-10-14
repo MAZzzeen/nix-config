@@ -13,8 +13,6 @@
     ./../../modules/home/configs.nix
   ];
 
-  sstylix.enable = true;
-
   alacritty.enable = true;
   kitty.enable = false;
   fastfetch.enable = true;
@@ -38,6 +36,12 @@
   nixvim.enable = true;
   zoxide.enable = true;
   yazi.enable = true;
+
+  stylix = {
+    targets = {
+      waybar.enable = false;
+    };
+  };
 
   programs.bash.enable = true;
 
