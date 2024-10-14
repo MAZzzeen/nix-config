@@ -122,8 +122,7 @@
           };
           mode-switcher = {
             enabled = true;
-            spacing = mkLiteral "10px";
-            margin = mkLiteral "10px 20px 30px 40px";
+            spacing = mkLiteral "10px 12px 10px 10px";
             background-color = mkLiteral "transparent";
           };
           button = {
