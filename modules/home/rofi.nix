@@ -126,7 +126,7 @@
             background-color = mkLiteral "transparent";
           };
           button = {
-            padding = mkLiteral "5px 0px";
+            padding = mkLiteral "5px 12px 10px 5px";
             border-radius = mkLiteral "10px";
             cursor = mkLiteral "pointer";
           };
