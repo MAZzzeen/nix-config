@@ -14,9 +14,9 @@
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
-        display-drun = "";
+        display-drun = "󱓞";
         display-emoji = "󰞅";
-        display-run = "";
+        display-run = "";
         modi = "drun,run,emoji";
         drun-display-format = "{name}";
         window-format = "{w} · {c} · {t}";
@@ -57,7 +57,7 @@
             enabled = true;
             padding = mkLiteral "5px 0px";
             expand = false;
-            str = "";
+            str = " ";
             background-color = mkLiteral "inherit";
             text-color = mkLiteral "inherit";
           };
