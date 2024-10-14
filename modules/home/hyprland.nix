@@ -44,7 +44,7 @@
           "SUPER, J, togglesplit,"
           "SUPER, Escape, exec, wlogout"
           "SUPER, F, fullscreen,"
-          "SUPER, Shift, >, exec, rofi -show emoji"
+          "SUPER, R, exec, rofi -show emoji"
 
           ", Print, exec, slurp | grim -g - - | wl-copy"
           "Shift, Print, exec, grim - | wl-copy"
