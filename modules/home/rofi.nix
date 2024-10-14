@@ -17,8 +17,7 @@
         display-drun = "Apps:";
         display-emoji = "Emoji:";
         display-dmenu = "Clipboard:";
-        modi = "combi";
-        combi-modi = "drun,emoji";
+        modi = "drun,emoji";
         show-icons = true;
       };
       theme = let
