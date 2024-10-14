@@ -89,6 +89,25 @@
           handle-width = mkLiteral "5px";
           border-radius = mkLiteral "10px";
         };
+        element = {
+          enabled = true;
+          spacing = mkLiteral "10px";
+          margin = mkLiteral "0px";
+          padding = mkLiteral "5px 10px";
+          border = mkLiteral "0px solid";
+          border-radius = mkLiteral "10px";
+          background-color = mkLiteral "transparent";
+          cursor = mkLiteral "pointer";
+        };
+        element-icon = {
+          # background-color = mkLiteral "transparent";
+          size = mkLiteral "24px";
+        };
+        element-text = {
+          # background-color = mkLiteral "transparent";
+          vertical-align = mkLiteral "0.5";
+          horizontal-align = 0;
+        };
       };
     };
   };
