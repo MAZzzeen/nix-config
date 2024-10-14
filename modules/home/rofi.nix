@@ -113,7 +113,10 @@
             cursor = mkLiteral "pointer";
           };
           "element selected.normal" = lib.mkForce {
-            background-color = mkLiteral "#000000";
+            background-color = mkLiteral "${base03}";
+          };
+          "element alternate.normal" = lib.mkForce {
+            background-color = mkLiteral "${base00}";
           };
           element-icon = {
             size = mkLiteral "24px";
