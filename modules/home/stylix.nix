@@ -10,9 +10,8 @@
   config = lib.mkIf config.sstylix.enable {
     stylix = {
       targets = {
-        waybar = {
-          enable = false;
-        };
+        waybar.enable = false;
+        rofi.enable = false;
       };
     };
   };
