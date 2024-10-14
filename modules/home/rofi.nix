@@ -14,9 +14,9 @@
       package = pkgs.rofi-wayland;
       cycle = true;
       extraConfig = {
-        display-drun = "";
-        display-emoji = "󰞅";
-        display-run = "";
+        display-drun = " ";
+        display-emoji = "󰞅 ";
+        display-run = " ";
         modi = "drun,run,emoji";
         drun-display-format = "{name}";
         window-format = "{w} · {c} · {t}";
@@ -36,11 +36,10 @@
           enabled = true;
           spacing = mkLiteral "10px";
           margin = mkLiteral "0px";
-          padding = mkLiteral "15px";
+          padding = mkLiteral "20px";
           border = mkLiteral "0px solid";
           border-radius = mkLiteral "0px 0px 0px 0px";
           background-color = mkLiteral "transparent";
-          children = mkLiteral ''[ "inputbar", "message", "listview" ]'';
         };
         inputbar = {
           enabled = true;
@@ -50,16 +49,9 @@
           border = mkLiteral "0px solid";
           border-radius = mkLiteral "0px";
           background-color = mkLiteral "transparent";
-          children = mkLiteral ''[ "textbox-prompt-colon", "entry", "mode-switcher" ]'';
         };
         prompt = {
           enabled = true;
-        };
-        textbox-prompt-colon = {
-          enabled = true;
-          padding = mkLiteral "5px 0px";
-          expand = false;
-          str = "";
         };
         num-filtered-rows = {
           enabled = true;
@@ -112,11 +104,9 @@
           cursor = mkLiteral "pointer";
         };
         element-icon = {
-          # background-color = mkLiteral "transparent";
           size = mkLiteral "24px";
         };
         element-text = {
-          # background-color = mkLiteral "transparent";
           vertical-align = mkLiteral "0.5";
           horizontal-align = 0;
         };
